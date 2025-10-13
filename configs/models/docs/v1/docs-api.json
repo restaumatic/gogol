@@ -26,7 +26,7 @@
   "canonicalName": "Docs",
   "description": "Reads and writes Google Docs documents.",
   "discoveryVersion": "v1",
-  "documentationLink": "https://developers.google.com/docs/",
+  "documentationLink": "https://developers.google.com/workspace/docs/",
   "fullyEncodeReservedExpansion": true,
   "icons": {
     "x16": "http://www.google.com/images/icons/product/search-16.gif",
@@ -221,7 +221,7 @@
       }
     }
   },
-  "revision": "20250218",
+  "revision": "20250925",
   "rootUrl": "https://docs.googleapis.com/",
   "schemas": {
     "AutoText": {
@@ -1753,6 +1753,25 @@
       },
       "type": "object"
     },
+    "InsertPersonRequest": {
+      "description": "Inserts a person mention.",
+      "id": "InsertPersonRequest",
+      "properties": {
+        "endOfSegmentLocation": {
+          "$ref": "EndOfSegmentLocation",
+          "description": "Inserts the person at the end of a header, footer, footnote or the document body."
+        },
+        "location": {
+          "$ref": "Location",
+          "description": "Inserts the person at a specific index in the document. The person mention must be inserted inside the bounds of an existing Paragraph. For instance, it cannot be inserted at a table's start index (i.e. between the table and its preceding paragraph). People cannot be inserted inside an equation."
+        },
+        "personProperties": {
+          "$ref": "PersonProperties",
+          "description": "The properties of the person mention to insert."
+        }
+      },
+      "type": "object"
+    },
     "InsertSectionBreakRequest": {
       "description": "Inserts a section break at the given location. A newline character will be inserted before the section break.",
       "id": "InsertSectionBreakRequest",
@@ -2756,13 +2775,11 @@
       "id": "PersonProperties",
       "properties": {
         "email": {
-          "description": "Output only. The email address linked to this Person. This field is always present.",
-          "readOnly": true,
+          "description": "The email address linked to this Person. This field is always present.",
           "type": "string"
         },
         "name": {
-          "description": "Output only. The name of the person if it's displayed in the link text instead of the person's email address.",
-          "readOnly": true,
+          "description": "The name of the person if it's displayed in the link text instead of the person's email address.",
           "type": "string"
         }
       },
@@ -3076,6 +3093,10 @@
         "insertPageBreak": {
           "$ref": "InsertPageBreakRequest",
           "description": "Inserts a page break at the specified location."
+        },
+        "insertPerson": {
+          "$ref": "InsertPersonRequest",
+          "description": "Inserts a person mention."
         },
         "insertSectionBreak": {
           "$ref": "InsertSectionBreakRequest",
@@ -3552,6 +3573,10 @@
       "properties": {
         "matchCase": {
           "description": "Indicates whether the search should respect case: - `True`: the search is case sensitive. - `False`: the search is case insensitive.",
+          "type": "boolean"
+        },
+        "searchByRegex": {
+          "description": "Optional. True if the find value should be treated as a regular expression. Any backslashes in the pattern should be escaped. - `True`: the search text is treated as a regular expressions. - `False`: the search text is treated as a substring for matching.",
           "type": "boolean"
         },
         "text": {
