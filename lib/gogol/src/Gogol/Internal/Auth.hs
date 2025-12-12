@@ -31,9 +31,12 @@ import Data.ByteArray (ByteArray)
 import Data.ByteArray.Encoding
 import Data.ByteString.Builder ()
 import Data.ByteString.Lazy qualified as LBS
+import Data.ByteString qualified as BS
 import Data.String (IsString)
 import Data.Text qualified as Text
 import Data.Text.Encoding qualified as Text
+import Network.URI (URI (..), URIAuth (..), parseURI, uriAuthority)
+import Text.Read (readMaybe)
 import Data.Time
 import Data.X509 (PrivKey (..))
 import Data.X509.Memory (readKeyFileFromMemory)
@@ -124,17 +127,19 @@ instance FromJSON ServiceAccount where
 data AuthorizedUser = AuthorizedUser
   { _userId :: !ClientId,
     _userRefresh :: !RefreshToken,
-    _userSecret :: !GSecret
+    _userSecret :: !GSecret,
+    _userTokenEndpoint :: !(Maybe Text)
   }
   deriving (Eq, Show)
 
 instance ToJSON AuthorizedUser where
-  toJSON (AuthorizedUser i r s) =
-    object
+  toJSON (AuthorizedUser i r s e) =
+    object $
       [ "client_id" .= i,
         "refresh_token" .= r,
         "client_secret" .= s
       ]
+        ++ maybe [] (\url -> ["token_endpoint" .= url]) e
 
 instance FromJSON AuthorizedUser where
   parseJSON = withObject "authorized_user" $ \o ->
@@ -142,6 +147,7 @@ instance FromJSON AuthorizedUser where
       <$> o .: "client_id"
       <*> o .: "refresh_token"
       <*> o .: "client_secret"
+      <*> o .:? "token_endpoint"
 
 -- | A client identifier and accompanying secret used to obtain/refresh a token.
 data OAuthClient = OAuthClient
@@ -293,6 +299,33 @@ tokenRequest =
         [ (hContentType, "application/x-www-form-urlencoded")
         ]
     }
+
+-- | Parse a token endpoint URL into a Client.Request.
+-- Falls back to default tokenRequest if URL is invalid.
+parseTokenEndpoint :: Maybe Text -> Client.Request
+parseTokenEndpoint Nothing = tokenRequest
+parseTokenEndpoint (Just url) =
+  case parseURI (Text.unpack url) of
+    Just uri ->
+      let auth = uriAuthority uri
+          scheme = uriScheme uri
+          isSecure = scheme == "https:"
+          (host, port) = case auth of
+            Just URIAuth {uriRegName, uriPort} ->
+              ( Text.encodeUtf8 (Text.pack uriRegName),
+                case uriPort of
+                  (':' : p) -> fromMaybe (if isSecure then 443 else 80) (readMaybe p)
+                  _ -> if isSecure then 443 else 80
+              )
+            Nothing -> ("www.googleapis.com", 443)
+          path = Text.encodeUtf8 (Text.pack (uriPath uri))
+       in tokenRequest
+            { Client.host = host,
+              Client.port = port,
+              Client.secure = isSecure,
+              Client.path = if BS.null path then "/oauth2/v4/token" else path
+            }
+    Nothing -> tokenRequest -- Invalid URL, use default
 
 refreshRequest ::
   (MonadIO m) =>
