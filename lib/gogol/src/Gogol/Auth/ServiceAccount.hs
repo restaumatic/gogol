@@ -80,7 +80,7 @@ authorizedUserToken ::
   m (OAuthToken s)
 authorizedUserToken u r =
   refreshRequest $
-    parseTokenEndpoint (_userTokenEndpoint u)
+    (parseTokenEndpoint (_userTokenEndpoint u))
       { Client.requestBody =
           textBody $
             "grant_type=refresh_token"
