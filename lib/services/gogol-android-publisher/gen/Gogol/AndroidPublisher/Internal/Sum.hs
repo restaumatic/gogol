@@ -3,12 +3,13 @@
 {-# LANGUAGE DuplicateRecordFields #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE PatternSynonyms #-}
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE StrictData #-}
 {-# LANGUAGE TypeFamilies #-}
-{-# LANGUAGE NoImplicitPrelude #-}
+
 {-# OPTIONS_GHC -fno-warn-duplicate-exports #-}
 {-# OPTIONS_GHC -fno-warn-name-shadowing #-}
 {-# OPTIONS_GHC -fno-warn-unused-binds #-}
@@ -23,17 +24,22 @@
 --               Toni Cebrián <toni@tonicebrian.com>
 -- Stability   : auto-generated
 -- Portability : non-portable (GHC extensions)
+--
 module Gogol.AndroidPublisher.Internal.Sum
-  ( -- * Xgafv
+  (
+
+    -- * Xgafv
     Xgafv
-      ( Xgafv_1,
+      (
+        Xgafv_1,
         Xgafv_2,
         ..
       ),
 
     -- * Abi_Alias
     Abi_Alias
-      ( Abi_Alias_UNSPECIFIEDCPUARCHITECTURE,
+      (
+        Abi_Alias_UNSPECIFIEDCPUARCHITECTURE,
         Abi_Alias_Armeabi,
         Abi_Alias_ARMEABIV7A,
         Abi_Alias_ARM64V8A,
@@ -45,15 +51,35 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ActivateBasePlanRequest_LatencyTolerance
     ActivateBasePlanRequest_LatencyTolerance
-      ( ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
       ),
 
+    -- * ActivateOneTimeProductOfferRequest_LatencyTolerance
+    ActivateOneTimeProductOfferRequest_LatencyTolerance
+      (
+        ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
+    -- * ActivatePurchaseOptionRequest_LatencyTolerance
+    ActivatePurchaseOptionRequest_LatencyTolerance
+      (
+        ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
     -- * ActivateSubscriptionOfferRequest_LatencyTolerance
     ActivateSubscriptionOfferRequest_LatencyTolerance
-      ( ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -61,7 +87,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * AppRecoveryAction_Status
     AppRecoveryAction_Status
-      ( AppRecoveryAction_Status_RECOVERYSTATUSUNSPECIFIED,
+      (
+        AppRecoveryAction_Status_RECOVERYSTATUSUNSPECIFIED,
         AppRecoveryAction_Status_RECOVERYSTATUSACTIVE,
         AppRecoveryAction_Status_RECOVERYSTATUSCANCELED,
         AppRecoveryAction_Status_RECOVERYSTATUSDRAFT,
@@ -72,7 +99,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * AssetModuleMetadata_DeliveryType
     AssetModuleMetadata_DeliveryType
-      ( AssetModuleMetadata_DeliveryType_UNKNOWNDELIVERYTYPE,
+      (
+        AssetModuleMetadata_DeliveryType_UNKNOWNDELIVERYTYPE,
         AssetModuleMetadata_DeliveryType_INSTALLTIME,
         AssetModuleMetadata_DeliveryType_ONDEMAND,
         AssetModuleMetadata_DeliveryType_FASTFOLLOW,
@@ -81,7 +109,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * AutoRenewingBasePlanType_ProrationMode
     AutoRenewingBasePlanType_ProrationMode
-      ( AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED,
+      (
+        AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED,
         AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEONNEXTBILLINGDATE,
         AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEFULLPRICEIMMEDIATELY,
         ..
@@ -89,7 +118,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * AutoRenewingBasePlanType_ResubscribeState
     AutoRenewingBasePlanType_ResubscribeState
-      ( AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED,
+      (
+        AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED,
         AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEACTIVE,
         AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEINACTIVE,
         ..
@@ -97,16 +127,27 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * BasePlan_State
     BasePlan_State
-      ( BasePlan_State_STATEUNSPECIFIED,
+      (
+        BasePlan_State_STATEUNSPECIFIED,
         BasePlan_State_Draft,
         BasePlan_State_Active,
         BasePlan_State_Inactive,
         ..
       ),
 
+    -- * CancelOneTimeProductOfferRequest_LatencyTolerance
+    CancelOneTimeProductOfferRequest_LatencyTolerance
+      (
+        CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
     -- * CancelSurveyResult_Reason
     CancelSurveyResult_Reason
-      ( CancelSurveyResult_Reason_CANCELSURVEYREASONUNSPECIFIED,
+      (
+        CancelSurveyResult_Reason_CANCELSURVEYREASONUNSPECIFIED,
         CancelSurveyResult_Reason_CANCELSURVEYREASONNOTENOUGHUSAGE,
         CancelSurveyResult_Reason_CANCELSURVEYREASONTECHNICALISSUES,
         CancelSurveyResult_Reason_CANCELSURVEYREASONCOSTRELATED,
@@ -115,25 +156,82 @@ module Gogol.AndroidPublisher.Internal.Sum
         ..
       ),
 
+    -- * CancellationContext_CancellationType
+    CancellationContext_CancellationType
+      (
+        CancellationContext_CancellationType_CANCELLATIONTYPEUNSPECIFIED,
+        CancellationContext_CancellationType_USERREQUESTEDSTOPRENEWALS,
+        CancellationContext_CancellationType_DEVELOPERREQUESTEDSTOPPAYMENTS,
+        ..
+      ),
+
     -- * DeactivateBasePlanRequest_LatencyTolerance
     DeactivateBasePlanRequest_LatencyTolerance
-      ( DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
       ),
 
+    -- * DeactivateOneTimeProductOfferRequest_LatencyTolerance
+    DeactivateOneTimeProductOfferRequest_LatencyTolerance
+      (
+        DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
+    -- * DeactivatePurchaseOptionRequest_LatencyTolerance
+    DeactivatePurchaseOptionRequest_LatencyTolerance
+      (
+        DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
     -- * DeactivateSubscriptionOfferRequest_LatencyTolerance
     DeactivateSubscriptionOfferRequest_LatencyTolerance
-      ( DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
       ),
 
+    -- * DeleteOneTimeProductOfferRequest_LatencyTolerance
+    DeleteOneTimeProductOfferRequest_LatencyTolerance
+      (
+        DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
+    -- * DeleteOneTimeProductRequest_LatencyTolerance
+    DeleteOneTimeProductRequest_LatencyTolerance
+      (
+        DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
+    -- * DeletePurchaseOptionRequest_LatencyTolerance
+    DeletePurchaseOptionRequest_LatencyTolerance
+      (
+        DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
     -- * DeobfuscationFile_SymbolType
     DeobfuscationFile_SymbolType
-      ( DeobfuscationFile_SymbolType_DeobfuscationFileTypeUnspecified,
+      (
+        DeobfuscationFile_SymbolType_DeobfuscationFileTypeUnspecified,
         DeobfuscationFile_SymbolType_Proguard,
         DeobfuscationFile_SymbolType_NativeCode,
         ..
@@ -141,7 +239,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ExternalSubscription_SubscriptionType
     ExternalSubscription_SubscriptionType
-      ( ExternalSubscription_SubscriptionType_SUBSCRIPTIONTYPEUNSPECIFIED,
+      (
+        ExternalSubscription_SubscriptionType_SUBSCRIPTIONTYPEUNSPECIFIED,
         ExternalSubscription_SubscriptionType_Recurring,
         ExternalSubscription_SubscriptionType_Prepaid,
         ..
@@ -149,7 +248,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ExternalTransaction_TransactionState
     ExternalTransaction_TransactionState
-      ( ExternalTransaction_TransactionState_TRANSACTIONSTATEUNSPECIFIED,
+      (
+        ExternalTransaction_TransactionState_TRANSACTIONSTATEUNSPECIFIED,
         ExternalTransaction_TransactionState_TRANSACTIONREPORTED,
         ExternalTransaction_TransactionState_TRANSACTIONCANCELED,
         ..
@@ -157,7 +257,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * GeneratedRecoveryApk_RecoveryStatus
     GeneratedRecoveryApk_RecoveryStatus
-      ( GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSUNSPECIFIED,
+      (
+        GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSUNSPECIFIED,
         GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSACTIVE,
         GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSCANCELED,
         GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSDRAFT,
@@ -168,7 +269,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * Grant_AppLevelPermissionsItem
     Grant_AppLevelPermissionsItem
-      ( Grant_AppLevelPermissionsItem_APPLEVELPERMISSIONUNSPECIFIED,
+      (
+        Grant_AppLevelPermissionsItem_APPLEVELPERMISSIONUNSPECIFIED,
         Grant_AppLevelPermissionsItem_CANACCESSAPP,
         Grant_AppLevelPermissionsItem_CANVIEWFINANCIALDATA,
         Grant_AppLevelPermissionsItem_CANMANAGEPERMISSIONS,
@@ -188,7 +290,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InAppProduct_PurchaseType
     InAppProduct_PurchaseType
-      ( InAppProduct_PurchaseType_PurchaseTypeUnspecified,
+      (
+        InAppProduct_PurchaseType_PurchaseTypeUnspecified,
         InAppProduct_PurchaseType_ManagedUser,
         InAppProduct_PurchaseType_Subscription,
         ..
@@ -196,7 +299,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InAppProduct_Status
     InAppProduct_Status
-      ( InAppProduct_Status_StatusUnspecified,
+      (
+        InAppProduct_Status_StatusUnspecified,
         InAppProduct_Status_Active,
         InAppProduct_Status_Inactive,
         ..
@@ -204,7 +308,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InappproductsDeleteRequest_LatencyTolerance
     InappproductsDeleteRequest_LatencyTolerance
-      ( InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -212,7 +317,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InappproductsUpdateRequest_LatencyTolerance
     InappproductsUpdateRequest_LatencyTolerance
-      ( InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -220,7 +326,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InstallmentsBasePlanType_ProrationMode
     InstallmentsBasePlanType_ProrationMode
-      ( InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED,
+      (
+        InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED,
         InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEONNEXTBILLINGDATE,
         InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEFULLPRICEIMMEDIATELY,
         ..
@@ -228,7 +335,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InstallmentsBasePlanType_RenewalType
     InstallmentsBasePlanType_RenewalType
-      ( InstallmentsBasePlanType_RenewalType_RENEWALTYPEUNSPECIFIED,
+      (
+        InstallmentsBasePlanType_RenewalType_RENEWALTYPEUNSPECIFIED,
         InstallmentsBasePlanType_RenewalType_RENEWALTYPERENEWSWITHOUTCOMMITMENT,
         InstallmentsBasePlanType_RenewalType_RENEWALTYPERENEWSWITHCOMMITMENT,
         ..
@@ -236,7 +344,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InstallmentsBasePlanType_ResubscribeState
     InstallmentsBasePlanType_ResubscribeState
-      ( InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED,
+      (
+        InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED,
         InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEACTIVE,
         InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEINACTIVE,
         ..
@@ -244,7 +353,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType
     ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType
-      ( ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
+      (
+        ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
         ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT,
         ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE,
         ..
@@ -252,7 +362,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * MigrateBasePlanPricesRequest_LatencyTolerance
     MigrateBasePlanPricesRequest_LatencyTolerance
-      ( MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -260,7 +371,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ModuleMetadata_DeliveryType
     ModuleMetadata_DeliveryType
-      ( ModuleMetadata_DeliveryType_UNKNOWNDELIVERYTYPE,
+      (
+        ModuleMetadata_DeliveryType_UNKNOWNDELIVERYTYPE,
         ModuleMetadata_DeliveryType_INSTALLTIME,
         ModuleMetadata_DeliveryType_ONDEMAND,
         ModuleMetadata_DeliveryType_FASTFOLLOW,
@@ -269,38 +381,205 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ModuleMetadata_ModuleType
     ModuleMetadata_ModuleType
-      ( ModuleMetadata_ModuleType_UNKNOWNMODULETYPE,
+      (
+        ModuleMetadata_ModuleType_UNKNOWNMODULETYPE,
         ModuleMetadata_ModuleType_FEATUREMODULE,
+        ..
+      ),
+
+    -- * OneTimeProductOffer_State
+    OneTimeProductOffer_State
+      (
+        OneTimeProductOffer_State_STATEUNSPECIFIED,
+        OneTimeProductOffer_State_Draft,
+        OneTimeProductOffer_State_Active,
+        OneTimeProductOffer_State_Cancelled,
+        OneTimeProductOffer_State_Inactive,
+        ..
+      ),
+
+    -- * OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability
+    OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability
+      (
+        OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED,
+        OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_Available,
+        OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE,
+        ..
+      ),
+
+    -- * OneTimeProductPreOrderOffer_PriceChangeBehavior
+    OneTimeProductPreOrderOffer_PriceChangeBehavior
+      (
+        OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORUNSPECIFIED,
+        OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORTWOPOINTLOWEST,
+        OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORNEWORDERSONLY,
+        ..
+      ),
+
+    -- * OneTimeProductPurchaseOption_State
+    OneTimeProductPurchaseOption_State
+      (
+        OneTimeProductPurchaseOption_State_STATEUNSPECIFIED,
+        OneTimeProductPurchaseOption_State_Draft,
+        OneTimeProductPurchaseOption_State_Active,
+        OneTimeProductPurchaseOption_State_Inactive,
+        OneTimeProductPurchaseOption_State_INACTIVEPUBLISHED,
+        ..
+      ),
+
+    -- * OneTimeProductPurchaseOptionNewRegionsConfig_Availability
+    OneTimeProductPurchaseOptionNewRegionsConfig_Availability
+      (
+        OneTimeProductPurchaseOptionNewRegionsConfig_Availability_AVAILABILITYUNSPECIFIED,
+        OneTimeProductPurchaseOptionNewRegionsConfig_Availability_Available,
+        OneTimeProductPurchaseOptionNewRegionsConfig_Availability_NOLONGERAVAILABLE,
+        ..
+      ),
+
+    -- * OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability
+    OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability
+      (
+        OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED,
+        OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_Available,
+        OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE,
+        OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABLEIFRELEASED,
+        ..
+      ),
+
+    -- * Order_State
+    Order_State
+      (
+        Order_State_STATEUNSPECIFIED,
+        Order_State_Pending,
+        Order_State_Processed,
+        Order_State_Canceled,
+        Order_State_PENDINGREFUND,
+        Order_State_PARTIALLYREFUNDED,
+        Order_State_Refunded,
+        ..
+      ),
+
+    -- * PartialRefundEvent_State
+    PartialRefundEvent_State
+      (
+        PartialRefundEvent_State_STATEUNSPECIFIED,
+        PartialRefundEvent_State_Pending,
+        PartialRefundEvent_State_PROCESSEDSUCCESSFULLY,
         ..
       ),
 
     -- * PrepaidBasePlanType_TimeExtension
     PrepaidBasePlanType_TimeExtension
-      ( PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONUNSPECIFIED,
+      (
+        PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONUNSPECIFIED,
         PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONACTIVE,
         PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONINACTIVE,
         ..
       ),
 
+    -- * PriceStepUpConsentDetails_State
+    PriceStepUpConsentDetails_State
+      (
+        PriceStepUpConsentDetails_State_CONSENTSTATEUNSPECIFIED,
+        PriceStepUpConsentDetails_State_Pending,
+        PriceStepUpConsentDetails_State_Confirmed,
+        PriceStepUpConsentDetails_State_Completed,
+        ..
+      ),
+
+    -- * ProductOfferDetails_ConsumptionState
+    ProductOfferDetails_ConsumptionState
+      (
+        ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEUNSPECIFIED,
+        ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEYETTOBECONSUMED,
+        ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATECONSUMED,
+        ..
+      ),
+
+    -- * ProductPurchaseV2_AcknowledgementState
+    ProductPurchaseV2_AcknowledgementState
+      (
+        ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED,
+        ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEPENDING,
+        ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLEDGED,
+        ..
+      ),
+
+    -- * PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType
+    PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType
+      (
+        PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
+        PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT,
+        PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTSERVICE,
+        ..
+      ),
+
+    -- * PurchaseStateContext_PurchaseState
+    PurchaseStateContext_PurchaseState
+      (
+        PurchaseStateContext_PurchaseState_PURCHASESTATEUNSPECIFIED,
+        PurchaseStateContext_PurchaseState_Purchased,
+        PurchaseStateContext_PurchaseState_Cancelled,
+        PurchaseStateContext_PurchaseState_Pending,
+        ..
+      ),
+
     -- * RecurringExternalTransaction_MigratedTransactionProgram
     RecurringExternalTransaction_MigratedTransactionProgram
-      ( RecurringExternalTransaction_MigratedTransactionProgram_EXTERNALTRANSACTIONPROGRAMUNSPECIFIED,
+      (
+        RecurringExternalTransaction_MigratedTransactionProgram_EXTERNALTRANSACTIONPROGRAMUNSPECIFIED,
         RecurringExternalTransaction_MigratedTransactionProgram_USERCHOICEBILLING,
         RecurringExternalTransaction_MigratedTransactionProgram_ALTERNATIVEBILLINGONLY,
         ..
       ),
 
+    -- * RefundEvent_RefundReason
+    RefundEvent_RefundReason
+      (
+        RefundEvent_RefundReason_REFUNDREASONUNSPECIFIED,
+        RefundEvent_RefundReason_Other,
+        RefundEvent_RefundReason_Chargeback,
+        ..
+      ),
+
     -- * RegionalPriceMigrationConfig_PriceIncreaseType
     RegionalPriceMigrationConfig_PriceIncreaseType
-      ( RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEUNSPECIFIED,
+      (
+        RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEUNSPECIFIED,
         RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEOPTIN,
         RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEOPTOUT,
         ..
       ),
 
+    -- * RegionalTaxConfig_StreamingTaxType
+    RegionalTaxConfig_StreamingTaxType
+      (
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED,
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEORENTAL,
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOSALES,
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOMULTICHANNEL,
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIORENTAL,
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOSALES,
+        RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOMULTICHANNEL,
+        ..
+      ),
+
+    -- * RegionalTaxConfig_TaxTier
+    RegionalTaxConfig_TaxTier
+      (
+        RegionalTaxConfig_TaxTier_TAXTIERUNSPECIFIED,
+        RegionalTaxConfig_TaxTier_TAX_TIER_BOOKS_1,
+        RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_1,
+        RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_2,
+        RegionalTaxConfig_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1,
+        RegionalTaxConfig_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1,
+        ..
+      ),
+
     -- * RegionalTaxRateInfo_StreamingTaxType
     RegionalTaxRateInfo_StreamingTaxType
-      ( RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED,
+      (
+        RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED,
         RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEORENTAL,
         RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOSALES,
         RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOMULTICHANNEL,
@@ -312,7 +591,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * RegionalTaxRateInfo_TaxTier
     RegionalTaxRateInfo_TaxTier
-      ( RegionalTaxRateInfo_TaxTier_TAXTIERUNSPECIFIED,
+      (
+        RegionalTaxRateInfo_TaxTier_TAXTIERUNSPECIFIED,
         RegionalTaxRateInfo_TaxTier_TAX_TIER_BOOKS_1,
         RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_1,
         RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_2,
@@ -323,7 +603,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * ScreenDensity_DensityAlias
     ScreenDensity_DensityAlias
-      ( ScreenDensity_DensityAlias_DENSITYUNSPECIFIED,
+      (
+        ScreenDensity_DensityAlias_DENSITYUNSPECIFIED,
         ScreenDensity_DensityAlias_Nodpi,
         ScreenDensity_DensityAlias_Ldpi,
         ScreenDensity_DensityAlias_Mdpi,
@@ -335,9 +616,20 @@ module Gogol.AndroidPublisher.Internal.Sum
         ..
       ),
 
+    -- * SubscriptionDetails_OfferPhase
+    SubscriptionDetails_OfferPhase
+      (
+        SubscriptionDetails_OfferPhase_OFFERPHASEUNSPECIFIED,
+        SubscriptionDetails_OfferPhase_Base,
+        SubscriptionDetails_OfferPhase_Introductory,
+        SubscriptionDetails_OfferPhase_FREETRIAL,
+        ..
+      ),
+
     -- * SubscriptionItemPriceChangeDetails_PriceChangeMode
     SubscriptionItemPriceChangeDetails_PriceChangeMode
-      ( SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICECHANGEMODEUNSPECIFIED,
+      (
+        SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICECHANGEMODEUNSPECIFIED,
         SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICEDECREASE,
         SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICEINCREASE,
         SubscriptionItemPriceChangeDetails_PriceChangeMode_OPTOUTPRICEINCREASE,
@@ -346,16 +638,19 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * SubscriptionItemPriceChangeDetails_PriceChangeState
     SubscriptionItemPriceChangeDetails_PriceChangeState
-      ( SubscriptionItemPriceChangeDetails_PriceChangeState_PRICECHANGESTATEUNSPECIFIED,
+      (
+        SubscriptionItemPriceChangeDetails_PriceChangeState_PRICECHANGESTATEUNSPECIFIED,
         SubscriptionItemPriceChangeDetails_PriceChangeState_Outstanding,
         SubscriptionItemPriceChangeDetails_PriceChangeState_Confirmed,
         SubscriptionItemPriceChangeDetails_PriceChangeState_Applied,
+        SubscriptionItemPriceChangeDetails_PriceChangeState_Canceled,
         ..
       ),
 
     -- * SubscriptionOffer_State
     SubscriptionOffer_State
-      ( SubscriptionOffer_State_STATEUNSPECIFIED,
+      (
+        SubscriptionOffer_State_STATEUNSPECIFIED,
         SubscriptionOffer_State_Draft,
         SubscriptionOffer_State_Active,
         SubscriptionOffer_State_Inactive,
@@ -364,7 +659,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * SubscriptionPurchaseV2_AcknowledgementState
     SubscriptionPurchaseV2_AcknowledgementState
-      ( SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED,
+      (
+        SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED,
         SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEPENDING,
         SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLEDGED,
         ..
@@ -372,7 +668,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * SubscriptionPurchaseV2_SubscriptionState
     SubscriptionPurchaseV2_SubscriptionState
-      ( SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEUNSPECIFIED,
+      (
+        SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEUNSPECIFIED,
         SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEPENDING,
         SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEACTIVE,
         SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEPAUSED,
@@ -386,15 +683,25 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType
     SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType
-      ( SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
+      (
+        SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
         SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT,
         SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE,
         ..
       ),
 
+    -- * TestPurchaseContext_FopType
+    TestPurchaseContext_FopType
+      (
+        TestPurchaseContext_FopType_FOPTYPEUNSPECIFIED,
+        TestPurchaseContext_FopType_Test,
+        ..
+      ),
+
     -- * TextureCompressionFormat_Alias
     TextureCompressionFormat_Alias
-      ( TextureCompressionFormat_Alias_UNSPECIFIEDTEXTURECOMPRESSIONFORMAT,
+      (
+        TextureCompressionFormat_Alias_UNSPECIFIEDTEXTURECOMPRESSIONFORMAT,
         TextureCompressionFormat_Alias_ETC1_RGB8,
         TextureCompressionFormat_Alias_Paletted,
         TextureCompressionFormat_Alias_THREEDC,
@@ -410,7 +717,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * TrackConfig_FormFactor
     TrackConfig_FormFactor
-      ( TrackConfig_FormFactor_FORMFACTORUNSPECIFIED,
+      (
+        TrackConfig_FormFactor_FORMFACTORUNSPECIFIED,
         TrackConfig_FormFactor_Default,
         TrackConfig_FormFactor_Wear,
         TrackConfig_FormFactor_Automotive,
@@ -419,14 +727,16 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * TrackConfig_Type
     TrackConfig_Type
-      ( TrackConfig_Type_TRACKTYPEUNSPECIFIED,
+      (
+        TrackConfig_Type_TRACKTYPEUNSPECIFIED,
         TrackConfig_Type_CLOSEDTESTING,
         ..
       ),
 
     -- * TrackRelease_Status
     TrackRelease_Status
-      ( TrackRelease_Status_StatusUnspecified,
+      (
+        TrackRelease_Status_StatusUnspecified,
         TrackRelease_Status_Draft,
         TrackRelease_Status_InProgress,
         TrackRelease_Status_Halted,
@@ -434,9 +744,28 @@ module Gogol.AndroidPublisher.Internal.Sum
         ..
       ),
 
+    -- * UpdateOneTimeProductOfferRequest_LatencyTolerance
+    UpdateOneTimeProductOfferRequest_LatencyTolerance
+      (
+        UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
+    -- * UpdateOneTimeProductRequest_LatencyTolerance
+    UpdateOneTimeProductRequest_LatencyTolerance
+      (
+        UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
     -- * UpdateSubscriptionOfferRequest_LatencyTolerance
     UpdateSubscriptionOfferRequest_LatencyTolerance
-      ( UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -444,7 +773,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * UpdateSubscriptionRequest_LatencyTolerance
     UpdateSubscriptionRequest_LatencyTolerance
-      ( UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -452,7 +782,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * User_AccessState
     User_AccessState
-      ( User_AccessState_ACCESSSTATEUNSPECIFIED,
+      (
+        User_AccessState_ACCESSSTATEUNSPECIFIED,
         User_AccessState_Invited,
         User_AccessState_INVITATIONEXPIRED,
         User_AccessState_ACCESSGRANTED,
@@ -462,7 +793,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * User_DeveloperAccountPermissionsItem
     User_DeveloperAccountPermissionsItem
-      ( User_DeveloperAccountPermissionsItem_DEVELOPERLEVELPERMISSIONUNSPECIFIED,
+      (
+        User_DeveloperAccountPermissionsItem_DEVELOPERLEVELPERMISSIONUNSPECIFIED,
         User_DeveloperAccountPermissionsItem_CANSEEALLAPPS,
         User_DeveloperAccountPermissionsItem_CANVIEWFINANCIALDATAGLOBAL,
         User_DeveloperAccountPermissionsItem_CANMANAGEPERMISSIONSGLOBAL,
@@ -486,7 +818,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsDeobfuscationfilesUploadDeobfuscationFileType
     EditsDeobfuscationfilesUploadDeobfuscationFileType
-      ( EditsDeobfuscationfilesUploadDeobfuscationFileType_DeobfuscationFileTypeUnspecified,
+      (
+        EditsDeobfuscationfilesUploadDeobfuscationFileType_DeobfuscationFileTypeUnspecified,
         EditsDeobfuscationfilesUploadDeobfuscationFileType_Proguard,
         EditsDeobfuscationfilesUploadDeobfuscationFileType_NativeCode,
         ..
@@ -494,7 +827,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsExpansionfilesGetExpansionFileType
     EditsExpansionfilesGetExpansionFileType
-      ( EditsExpansionfilesGetExpansionFileType_ExpansionFileTypeUnspecified,
+      (
+        EditsExpansionfilesGetExpansionFileType_ExpansionFileTypeUnspecified,
         EditsExpansionfilesGetExpansionFileType_Main,
         EditsExpansionfilesGetExpansionFileType_Patch',
         ..
@@ -502,7 +836,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsExpansionfilesPatchExpansionFileType
     EditsExpansionfilesPatchExpansionFileType
-      ( EditsExpansionfilesPatchExpansionFileType_ExpansionFileTypeUnspecified,
+      (
+        EditsExpansionfilesPatchExpansionFileType_ExpansionFileTypeUnspecified,
         EditsExpansionfilesPatchExpansionFileType_Main,
         EditsExpansionfilesPatchExpansionFileType_Patch',
         ..
@@ -510,7 +845,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsExpansionfilesUpdateExpansionFileType
     EditsExpansionfilesUpdateExpansionFileType
-      ( EditsExpansionfilesUpdateExpansionFileType_ExpansionFileTypeUnspecified,
+      (
+        EditsExpansionfilesUpdateExpansionFileType_ExpansionFileTypeUnspecified,
         EditsExpansionfilesUpdateExpansionFileType_Main,
         EditsExpansionfilesUpdateExpansionFileType_Patch',
         ..
@@ -518,7 +854,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsExpansionfilesUploadExpansionFileType
     EditsExpansionfilesUploadExpansionFileType
-      ( EditsExpansionfilesUploadExpansionFileType_ExpansionFileTypeUnspecified,
+      (
+        EditsExpansionfilesUploadExpansionFileType_ExpansionFileTypeUnspecified,
         EditsExpansionfilesUploadExpansionFileType_Main,
         EditsExpansionfilesUploadExpansionFileType_Patch',
         ..
@@ -526,7 +863,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsImagesDeleteImageType
     EditsImagesDeleteImageType
-      ( EditsImagesDeleteImageType_AppImageTypeUnspecified,
+      (
+        EditsImagesDeleteImageType_AppImageTypeUnspecified,
         EditsImagesDeleteImageType_PhoneScreenshots,
         EditsImagesDeleteImageType_SevenInchScreenshots,
         EditsImagesDeleteImageType_TenInchScreenshots,
@@ -540,7 +878,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsImagesDeleteallImageType
     EditsImagesDeleteallImageType
-      ( EditsImagesDeleteallImageType_AppImageTypeUnspecified,
+      (
+        EditsImagesDeleteallImageType_AppImageTypeUnspecified,
         EditsImagesDeleteallImageType_PhoneScreenshots,
         EditsImagesDeleteallImageType_SevenInchScreenshots,
         EditsImagesDeleteallImageType_TenInchScreenshots,
@@ -554,7 +893,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsImagesListImageType
     EditsImagesListImageType
-      ( EditsImagesListImageType_AppImageTypeUnspecified,
+      (
+        EditsImagesListImageType_AppImageTypeUnspecified,
         EditsImagesListImageType_PhoneScreenshots,
         EditsImagesListImageType_SevenInchScreenshots,
         EditsImagesListImageType_TenInchScreenshots,
@@ -568,7 +908,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * EditsImagesUploadImageType
     EditsImagesUploadImageType
-      ( EditsImagesUploadImageType_AppImageTypeUnspecified,
+      (
+        EditsImagesUploadImageType_AppImageTypeUnspecified,
         EditsImagesUploadImageType_PhoneScreenshots,
         EditsImagesUploadImageType_SevenInchScreenshots,
         EditsImagesUploadImageType_TenInchScreenshots,
@@ -582,7 +923,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InappproductsDeleteLatencyTolerance
     InappproductsDeleteLatencyTolerance
-      ( InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -590,7 +932,8 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InappproductsPatchLatencyTolerance
     InappproductsPatchLatencyTolerance
-      ( InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -598,15 +941,35 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * InappproductsUpdateLatencyTolerance
     InappproductsUpdateLatencyTolerance
-      ( InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
       ),
 
+    -- * MonetizationOnetimeproductsDeleteLatencyTolerance
+    MonetizationOnetimeproductsDeleteLatencyTolerance
+      (
+        MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
+    -- * MonetizationOnetimeproductsPatchLatencyTolerance
+    MonetizationOnetimeproductsPatchLatencyTolerance
+      (
+        MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+        MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+        MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+        ..
+      ),
+
     -- * MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance
     MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance
-      ( MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
@@ -614,28 +977,28 @@ module Gogol.AndroidPublisher.Internal.Sum
 
     -- * MonetizationSubscriptionsPatchLatencyTolerance
     MonetizationSubscriptionsPatchLatencyTolerance
-      ( MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+      (
+        MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
         MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
         MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
         ..
       ),
-  )
-where
+  ) where
 
-import Gogol.Prelude qualified as Core
+import qualified Gogol.Prelude as Core
 
 -- | V1 error format.
-newtype Xgafv = Xgafv {fromXgafv :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype Xgafv = Xgafv { fromXgafv :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | v1 error format
 pattern Xgafv_1 :: Xgafv
@@ -648,21 +1011,20 @@ pattern Xgafv_2 = Xgafv "2"
 {-# COMPLETE
   Xgafv_1,
   Xgafv_2,
-  Xgafv
-  #-}
+  Xgafv #-}
 
 -- | Alias for an abi.
-newtype Abi_Alias = Abi_Alias {fromAbi_Alias :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype Abi_Alias = Abi_Alias { fromAbi_Alias :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified abi.
 pattern Abi_Alias_UNSPECIFIEDCPUARCHITECTURE :: Abi_Alias
@@ -700,21 +1062,20 @@ pattern Abi_Alias_RISCV64 = Abi_Alias "RISCV64"
   Abi_Alias_X86,
   Abi_Alias_X86_64,
   Abi_Alias_RISCV64,
-  Abi_Alias
-  #-}
+  Abi_Alias #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype ActivateBasePlanRequest_LatencyTolerance = ActivateBasePlanRequest_LatencyTolerance {fromActivateBasePlanRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ActivateBasePlanRequest_LatencyTolerance = ActivateBasePlanRequest_LatencyTolerance { fromActivateBasePlanRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: ActivateBasePlanRequest_LatencyTolerance
@@ -732,21 +1093,82 @@ pattern ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELA
   ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   ActivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  ActivateBasePlanRequest_LatencyTolerance
-  #-}
+  ActivateBasePlanRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this update. Defaults to latency-sensitive.
+newtype ActivateOneTimeProductOfferRequest_LatencyTolerance = ActivateOneTimeProductOfferRequest_LatencyTolerance { fromActivateOneTimeProductOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: ActivateOneTimeProductOfferRequest_LatencyTolerance
+pattern ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = ActivateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: ActivateOneTimeProductOfferRequest_LatencyTolerance
+pattern ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = ActivateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: ActivateOneTimeProductOfferRequest_LatencyTolerance
+pattern ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = ActivateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  ActivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  ActivateOneTimeProductOfferRequest_LatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype ActivateSubscriptionOfferRequest_LatencyTolerance = ActivateSubscriptionOfferRequest_LatencyTolerance {fromActivateSubscriptionOfferRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ActivatePurchaseOptionRequest_LatencyTolerance = ActivatePurchaseOptionRequest_LatencyTolerance { fromActivatePurchaseOptionRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: ActivatePurchaseOptionRequest_LatencyTolerance
+pattern ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = ActivatePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: ActivatePurchaseOptionRequest_LatencyTolerance
+pattern ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = ActivatePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: ActivatePurchaseOptionRequest_LatencyTolerance
+pattern ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = ActivatePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  ActivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  ActivatePurchaseOptionRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
+newtype ActivateSubscriptionOfferRequest_LatencyTolerance = ActivateSubscriptionOfferRequest_LatencyTolerance { fromActivateSubscriptionOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: ActivateSubscriptionOfferRequest_LatencyTolerance
@@ -764,21 +1186,20 @@ pattern ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTO
   ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   ActivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  ActivateSubscriptionOfferRequest_LatencyTolerance
-  #-}
+  ActivateSubscriptionOfferRequest_LatencyTolerance #-}
 
 -- | The status of the recovery action.
-newtype AppRecoveryAction_Status = AppRecoveryAction_Status {fromAppRecoveryAction_Status :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype AppRecoveryAction_Status = AppRecoveryAction_Status { fromAppRecoveryAction_Status :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | RecoveryStatus is unspecified.
 pattern AppRecoveryAction_Status_RECOVERYSTATUSUNSPECIFIED :: AppRecoveryAction_Status
@@ -811,21 +1232,20 @@ pattern AppRecoveryAction_Status_RECOVERYSTATUSGENERATIONFAILED = AppRecoveryAct
   AppRecoveryAction_Status_RECOVERYSTATUSDRAFT,
   AppRecoveryAction_Status_RECOVERYSTATUSGENERATIONINPROGRESS,
   AppRecoveryAction_Status_RECOVERYSTATUSGENERATIONFAILED,
-  AppRecoveryAction_Status
-  #-}
+  AppRecoveryAction_Status #-}
 
 -- | Indicates the delivery type for persistent install.
-newtype AssetModuleMetadata_DeliveryType = AssetModuleMetadata_DeliveryType {fromAssetModuleMetadata_DeliveryType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype AssetModuleMetadata_DeliveryType = AssetModuleMetadata_DeliveryType { fromAssetModuleMetadata_DeliveryType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified delivery type.
 pattern AssetModuleMetadata_DeliveryType_UNKNOWNDELIVERYTYPE :: AssetModuleMetadata_DeliveryType
@@ -848,21 +1268,20 @@ pattern AssetModuleMetadata_DeliveryType_FASTFOLLOW = AssetModuleMetadata_Delive
   AssetModuleMetadata_DeliveryType_INSTALLTIME,
   AssetModuleMetadata_DeliveryType_ONDEMAND,
   AssetModuleMetadata_DeliveryType_FASTFOLLOW,
-  AssetModuleMetadata_DeliveryType
-  #-}
+  AssetModuleMetadata_DeliveryType #-}
 
 -- | The proration mode for the base plan determines what happens when a user switches to this plan from another base plan. If unspecified, defaults to CHARGE/ON/NEXT/BILLING/DATE.
-newtype AutoRenewingBasePlanType_ProrationMode = AutoRenewingBasePlanType_ProrationMode {fromAutoRenewingBasePlanType_ProrationMode :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype AutoRenewingBasePlanType_ProrationMode = AutoRenewingBasePlanType_ProrationMode { fromAutoRenewingBasePlanType_ProrationMode :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified mode.
 pattern AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED :: AutoRenewingBasePlanType_ProrationMode
@@ -880,21 +1299,20 @@ pattern AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEFU
   AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED,
   AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEONNEXTBILLINGDATE,
   AutoRenewingBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEFULLPRICEIMMEDIATELY,
-  AutoRenewingBasePlanType_ProrationMode
-  #-}
+  AutoRenewingBasePlanType_ProrationMode #-}
 
 -- | Whether users should be able to resubscribe to this base plan in Google Play surfaces. Defaults to RESUBSCRIBE/STATE/ACTIVE if not specified.
-newtype AutoRenewingBasePlanType_ResubscribeState = AutoRenewingBasePlanType_ResubscribeState {fromAutoRenewingBasePlanType_ResubscribeState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype AutoRenewingBasePlanType_ResubscribeState = AutoRenewingBasePlanType_ResubscribeState { fromAutoRenewingBasePlanType_ResubscribeState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified state.
 pattern AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED :: AutoRenewingBasePlanType_ResubscribeState
@@ -912,21 +1330,20 @@ pattern AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEINACTIVE = Aut
   AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED,
   AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEACTIVE,
   AutoRenewingBasePlanType_ResubscribeState_RESUBSCRIBESTATEINACTIVE,
-  AutoRenewingBasePlanType_ResubscribeState
-  #-}
+  AutoRenewingBasePlanType_ResubscribeState #-}
 
 -- | Output only. The state of the base plan, i.e. whether it\'s active. Draft and inactive base plans can be activated or deleted. Active base plans can be made inactive. Inactive base plans can be canceled. This field cannot be changed by updating the resource. Use the dedicated endpoints instead.
-newtype BasePlan_State = BasePlan_State {fromBasePlan_State :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype BasePlan_State = BasePlan_State { fromBasePlan_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified state.
 pattern BasePlan_State_STATEUNSPECIFIED :: BasePlan_State
@@ -949,21 +1366,51 @@ pattern BasePlan_State_Inactive = BasePlan_State "INACTIVE"
   BasePlan_State_Draft,
   BasePlan_State_Active,
   BasePlan_State_Inactive,
-  BasePlan_State
-  #-}
+  BasePlan_State #-}
+
+-- | Optional. The latency tolerance for the propagation of this update. Defaults to latency-sensitive.
+newtype CancelOneTimeProductOfferRequest_LatencyTolerance = CancelOneTimeProductOfferRequest_LatencyTolerance { fromCancelOneTimeProductOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: CancelOneTimeProductOfferRequest_LatencyTolerance
+pattern CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = CancelOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: CancelOneTimeProductOfferRequest_LatencyTolerance
+pattern CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = CancelOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: CancelOneTimeProductOfferRequest_LatencyTolerance
+pattern CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = CancelOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  CancelOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  CancelOneTimeProductOfferRequest_LatencyTolerance #-}
 
 -- | The reason the user selected in the cancel survey.
-newtype CancelSurveyResult_Reason = CancelSurveyResult_Reason {fromCancelSurveyResult_Reason :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype CancelSurveyResult_Reason = CancelSurveyResult_Reason { fromCancelSurveyResult_Reason :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified cancel survey reason.
 pattern CancelSurveyResult_Reason_CANCELSURVEYREASONUNSPECIFIED :: CancelSurveyResult_Reason
@@ -996,21 +1443,51 @@ pattern CancelSurveyResult_Reason_CANCELSURVEYREASONOTHERS = CancelSurveyResult_
   CancelSurveyResult_Reason_CANCELSURVEYREASONCOSTRELATED,
   CancelSurveyResult_Reason_CANCELSURVEYREASONFOUNDBETTERAPP,
   CancelSurveyResult_Reason_CANCELSURVEYREASONOTHERS,
-  CancelSurveyResult_Reason
-  #-}
+  CancelSurveyResult_Reason #-}
+
+-- | Required. The type of cancellation for the purchased subscription.
+newtype CancellationContext_CancellationType = CancellationContext_CancellationType { fromCancellationContext_CancellationType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Cancellation type unspecified.
+pattern CancellationContext_CancellationType_CANCELLATIONTYPEUNSPECIFIED :: CancellationContext_CancellationType
+pattern CancellationContext_CancellationType_CANCELLATIONTYPEUNSPECIFIED = CancellationContext_CancellationType "CANCELLATION_TYPE_UNSPECIFIED"
+
+-- | Cancellation requested by the user, and the subscription can be restored. It only stops the subscription\'s next renewal. For an installment subscription, users still need to finish the commitment period. For more details on renewals and payments, see https:\/\/developer.android.com\/google\/play\/billing\/subscriptions#installments
+pattern CancellationContext_CancellationType_USERREQUESTEDSTOPRENEWALS :: CancellationContext_CancellationType
+pattern CancellationContext_CancellationType_USERREQUESTEDSTOPRENEWALS = CancellationContext_CancellationType "USER_REQUESTED_STOP_RENEWALS"
+
+-- | Cancellation requested by the developer, and the subscription cannot be restored. It stops the subscription\'s next payment. For an installment subscription, users will not need to pay the next payment and finish the commitment period. For more details on renewals and payments, see https:\/\/developer.android.com\/google\/play\/billing\/subscriptions#installments
+pattern CancellationContext_CancellationType_DEVELOPERREQUESTEDSTOPPAYMENTS :: CancellationContext_CancellationType
+pattern CancellationContext_CancellationType_DEVELOPERREQUESTEDSTOPPAYMENTS = CancellationContext_CancellationType "DEVELOPER_REQUESTED_STOP_PAYMENTS"
+
+{-# COMPLETE
+  CancellationContext_CancellationType_CANCELLATIONTYPEUNSPECIFIED,
+  CancellationContext_CancellationType_USERREQUESTEDSTOPRENEWALS,
+  CancellationContext_CancellationType_DEVELOPERREQUESTEDSTOPPAYMENTS,
+  CancellationContext_CancellationType #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype DeactivateBasePlanRequest_LatencyTolerance = DeactivateBasePlanRequest_LatencyTolerance {fromDeactivateBasePlanRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype DeactivateBasePlanRequest_LatencyTolerance = DeactivateBasePlanRequest_LatencyTolerance { fromDeactivateBasePlanRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeactivateBasePlanRequest_LatencyTolerance
@@ -1028,21 +1505,82 @@ pattern DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCE
   DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   DeactivateBasePlanRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  DeactivateBasePlanRequest_LatencyTolerance
-  #-}
+  DeactivateBasePlanRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this update. Defaults to latency-sensitive.
+newtype DeactivateOneTimeProductOfferRequest_LatencyTolerance = DeactivateOneTimeProductOfferRequest_LatencyTolerance { fromDeactivateOneTimeProductOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeactivateOneTimeProductOfferRequest_LatencyTolerance
+pattern DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = DeactivateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: DeactivateOneTimeProductOfferRequest_LatencyTolerance
+pattern DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = DeactivateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: DeactivateOneTimeProductOfferRequest_LatencyTolerance
+pattern DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = DeactivateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  DeactivateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  DeactivateOneTimeProductOfferRequest_LatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype DeactivateSubscriptionOfferRequest_LatencyTolerance = DeactivateSubscriptionOfferRequest_LatencyTolerance {fromDeactivateSubscriptionOfferRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype DeactivatePurchaseOptionRequest_LatencyTolerance = DeactivatePurchaseOptionRequest_LatencyTolerance { fromDeactivatePurchaseOptionRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeactivatePurchaseOptionRequest_LatencyTolerance
+pattern DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = DeactivatePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: DeactivatePurchaseOptionRequest_LatencyTolerance
+pattern DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = DeactivatePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: DeactivatePurchaseOptionRequest_LatencyTolerance
+pattern DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = DeactivatePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  DeactivatePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  DeactivatePurchaseOptionRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
+newtype DeactivateSubscriptionOfferRequest_LatencyTolerance = DeactivateSubscriptionOfferRequest_LatencyTolerance { fromDeactivateSubscriptionOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeactivateSubscriptionOfferRequest_LatencyTolerance
@@ -1060,21 +1598,113 @@ pattern DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCY
   DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   DeactivateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  DeactivateSubscriptionOfferRequest_LatencyTolerance
-  #-}
+  DeactivateSubscriptionOfferRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
+newtype DeleteOneTimeProductOfferRequest_LatencyTolerance = DeleteOneTimeProductOfferRequest_LatencyTolerance { fromDeleteOneTimeProductOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeleteOneTimeProductOfferRequest_LatencyTolerance
+pattern DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = DeleteOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: DeleteOneTimeProductOfferRequest_LatencyTolerance
+pattern DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = DeleteOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: DeleteOneTimeProductOfferRequest_LatencyTolerance
+pattern DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = DeleteOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  DeleteOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  DeleteOneTimeProductOfferRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
+newtype DeleteOneTimeProductRequest_LatencyTolerance = DeleteOneTimeProductRequest_LatencyTolerance { fromDeleteOneTimeProductRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeleteOneTimeProductRequest_LatencyTolerance
+pattern DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = DeleteOneTimeProductRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: DeleteOneTimeProductRequest_LatencyTolerance
+pattern DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = DeleteOneTimeProductRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: DeleteOneTimeProductRequest_LatencyTolerance
+pattern DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = DeleteOneTimeProductRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  DeleteOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  DeleteOneTimeProductRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
+newtype DeletePurchaseOptionRequest_LatencyTolerance = DeletePurchaseOptionRequest_LatencyTolerance { fromDeletePurchaseOptionRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: DeletePurchaseOptionRequest_LatencyTolerance
+pattern DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = DeletePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: DeletePurchaseOptionRequest_LatencyTolerance
+pattern DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = DeletePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: DeletePurchaseOptionRequest_LatencyTolerance
+pattern DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = DeletePurchaseOptionRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  DeletePurchaseOptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  DeletePurchaseOptionRequest_LatencyTolerance #-}
 
 -- | The type of the deobfuscation file.
-newtype DeobfuscationFile_SymbolType = DeobfuscationFile_SymbolType {fromDeobfuscationFile_SymbolType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype DeobfuscationFile_SymbolType = DeobfuscationFile_SymbolType { fromDeobfuscationFile_SymbolType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified deobfuscation file type.
 pattern DeobfuscationFile_SymbolType_DeobfuscationFileTypeUnspecified :: DeobfuscationFile_SymbolType
@@ -1092,21 +1722,20 @@ pattern DeobfuscationFile_SymbolType_NativeCode = DeobfuscationFile_SymbolType "
   DeobfuscationFile_SymbolType_DeobfuscationFileTypeUnspecified,
   DeobfuscationFile_SymbolType_Proguard,
   DeobfuscationFile_SymbolType_NativeCode,
-  DeobfuscationFile_SymbolType
-  #-}
+  DeobfuscationFile_SymbolType #-}
 
 -- | Required. The type of the external subscription.
-newtype ExternalSubscription_SubscriptionType = ExternalSubscription_SubscriptionType {fromExternalSubscription_SubscriptionType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ExternalSubscription_SubscriptionType = ExternalSubscription_SubscriptionType { fromExternalSubscription_SubscriptionType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified, do not use.
 pattern ExternalSubscription_SubscriptionType_SUBSCRIPTIONTYPEUNSPECIFIED :: ExternalSubscription_SubscriptionType
@@ -1124,21 +1753,20 @@ pattern ExternalSubscription_SubscriptionType_Prepaid = ExternalSubscription_Sub
   ExternalSubscription_SubscriptionType_SUBSCRIPTIONTYPEUNSPECIFIED,
   ExternalSubscription_SubscriptionType_Recurring,
   ExternalSubscription_SubscriptionType_Prepaid,
-  ExternalSubscription_SubscriptionType
-  #-}
+  ExternalSubscription_SubscriptionType #-}
 
 -- | Output only. The current state of the transaction.
-newtype ExternalTransaction_TransactionState = ExternalTransaction_TransactionState {fromExternalTransaction_TransactionState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ExternalTransaction_TransactionState = ExternalTransaction_TransactionState { fromExternalTransaction_TransactionState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified transaction state. Not used.
 pattern ExternalTransaction_TransactionState_TRANSACTIONSTATEUNSPECIFIED :: ExternalTransaction_TransactionState
@@ -1156,21 +1784,20 @@ pattern ExternalTransaction_TransactionState_TRANSACTIONCANCELED = ExternalTrans
   ExternalTransaction_TransactionState_TRANSACTIONSTATEUNSPECIFIED,
   ExternalTransaction_TransactionState_TRANSACTIONREPORTED,
   ExternalTransaction_TransactionState_TRANSACTIONCANCELED,
-  ExternalTransaction_TransactionState
-  #-}
+  ExternalTransaction_TransactionState #-}
 
 -- | The status of the recovery action corresponding to the recovery apk.
-newtype GeneratedRecoveryApk_RecoveryStatus = GeneratedRecoveryApk_RecoveryStatus {fromGeneratedRecoveryApk_RecoveryStatus :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype GeneratedRecoveryApk_RecoveryStatus = GeneratedRecoveryApk_RecoveryStatus { fromGeneratedRecoveryApk_RecoveryStatus :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | RecoveryStatus is unspecified.
 pattern GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSUNSPECIFIED :: GeneratedRecoveryApk_RecoveryStatus
@@ -1203,20 +1830,19 @@ pattern GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSGENERATIONFAILED = Gen
   GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSDRAFT,
   GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSGENERATIONINPROGRESS,
   GeneratedRecoveryApk_RecoveryStatus_RECOVERYSTATUSGENERATIONFAILED,
-  GeneratedRecoveryApk_RecoveryStatus
-  #-}
+  GeneratedRecoveryApk_RecoveryStatus #-}
 
-newtype Grant_AppLevelPermissionsItem = Grant_AppLevelPermissionsItem {fromGrant_AppLevelPermissionsItem :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype Grant_AppLevelPermissionsItem = Grant_AppLevelPermissionsItem { fromGrant_AppLevelPermissionsItem :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unknown or unspecified permission.
 pattern Grant_AppLevelPermissionsItem_APPLEVELPERMISSIONUNSPECIFIED :: Grant_AppLevelPermissionsItem
@@ -1294,21 +1920,20 @@ pattern Grant_AppLevelPermissionsItem_CANMANAGEDEEPLINKS = Grant_AppLevelPermiss
   Grant_AppLevelPermissionsItem_CANVIEWNONFINANCIALDATA,
   Grant_AppLevelPermissionsItem_CANVIEWAPPQUALITY,
   Grant_AppLevelPermissionsItem_CANMANAGEDEEPLINKS,
-  Grant_AppLevelPermissionsItem
-  #-}
+  Grant_AppLevelPermissionsItem #-}
 
 -- | The type of the product, e.g. a recurring subscription.
-newtype InAppProduct_PurchaseType = InAppProduct_PurchaseType {fromInAppProduct_PurchaseType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InAppProduct_PurchaseType = InAppProduct_PurchaseType { fromInAppProduct_PurchaseType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified purchase type.
 pattern InAppProduct_PurchaseType_PurchaseTypeUnspecified :: InAppProduct_PurchaseType
@@ -1326,21 +1951,20 @@ pattern InAppProduct_PurchaseType_Subscription = InAppProduct_PurchaseType "subs
   InAppProduct_PurchaseType_PurchaseTypeUnspecified,
   InAppProduct_PurchaseType_ManagedUser,
   InAppProduct_PurchaseType_Subscription,
-  InAppProduct_PurchaseType
-  #-}
+  InAppProduct_PurchaseType #-}
 
 -- | The status of the product, e.g. whether it\'s active.
-newtype InAppProduct_Status = InAppProduct_Status {fromInAppProduct_Status :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InAppProduct_Status = InAppProduct_Status { fromInAppProduct_Status :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified status.
 pattern InAppProduct_Status_StatusUnspecified :: InAppProduct_Status
@@ -1358,21 +1982,20 @@ pattern InAppProduct_Status_Inactive = InAppProduct_Status "inactive"
   InAppProduct_Status_StatusUnspecified,
   InAppProduct_Status_Active,
   InAppProduct_Status_Inactive,
-  InAppProduct_Status
-  #-}
+  InAppProduct_Status #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype InappproductsDeleteRequest_LatencyTolerance = InappproductsDeleteRequest_LatencyTolerance {fromInappproductsDeleteRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InappproductsDeleteRequest_LatencyTolerance = InappproductsDeleteRequest_LatencyTolerance { fromInappproductsDeleteRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: InappproductsDeleteRequest_LatencyTolerance
@@ -1390,21 +2013,20 @@ pattern InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANC
   InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   InappproductsDeleteRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  InappproductsDeleteRequest_LatencyTolerance
-  #-}
+  InappproductsDeleteRequest_LatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype InappproductsUpdateRequest_LatencyTolerance = InappproductsUpdateRequest_LatencyTolerance {fromInappproductsUpdateRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InappproductsUpdateRequest_LatencyTolerance = InappproductsUpdateRequest_LatencyTolerance { fromInappproductsUpdateRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: InappproductsUpdateRequest_LatencyTolerance
@@ -1422,21 +2044,20 @@ pattern InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANC
   InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   InappproductsUpdateRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  InappproductsUpdateRequest_LatencyTolerance
-  #-}
+  InappproductsUpdateRequest_LatencyTolerance #-}
 
 -- | The proration mode for the base plan determines what happens when a user switches to this plan from another base plan. If unspecified, defaults to CHARGE/ON/NEXT/BILLING/DATE.
-newtype InstallmentsBasePlanType_ProrationMode = InstallmentsBasePlanType_ProrationMode {fromInstallmentsBasePlanType_ProrationMode :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InstallmentsBasePlanType_ProrationMode = InstallmentsBasePlanType_ProrationMode { fromInstallmentsBasePlanType_ProrationMode :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified mode.
 pattern InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED :: InstallmentsBasePlanType_ProrationMode
@@ -1454,21 +2075,20 @@ pattern InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEFU
   InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODEUNSPECIFIED,
   InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEONNEXTBILLINGDATE,
   InstallmentsBasePlanType_ProrationMode_SUBSCRIPTIONPRORATIONMODECHARGEFULLPRICEIMMEDIATELY,
-  InstallmentsBasePlanType_ProrationMode
-  #-}
+  InstallmentsBasePlanType_ProrationMode #-}
 
 -- | Required. Immutable. Installments base plan renewal type. Determines the behavior at the end of the initial commitment. The renewal type is immutable after the base plan is created.
-newtype InstallmentsBasePlanType_RenewalType = InstallmentsBasePlanType_RenewalType {fromInstallmentsBasePlanType_RenewalType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InstallmentsBasePlanType_RenewalType = InstallmentsBasePlanType_RenewalType { fromInstallmentsBasePlanType_RenewalType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified state.
 pattern InstallmentsBasePlanType_RenewalType_RENEWALTYPEUNSPECIFIED :: InstallmentsBasePlanType_RenewalType
@@ -1486,21 +2106,20 @@ pattern InstallmentsBasePlanType_RenewalType_RENEWALTYPERENEWSWITHCOMMITMENT = I
   InstallmentsBasePlanType_RenewalType_RENEWALTYPEUNSPECIFIED,
   InstallmentsBasePlanType_RenewalType_RENEWALTYPERENEWSWITHOUTCOMMITMENT,
   InstallmentsBasePlanType_RenewalType_RENEWALTYPERENEWSWITHCOMMITMENT,
-  InstallmentsBasePlanType_RenewalType
-  #-}
+  InstallmentsBasePlanType_RenewalType #-}
 
 -- | Whether users should be able to resubscribe to this base plan in Google Play surfaces. Defaults to RESUBSCRIBE/STATE/ACTIVE if not specified.
-newtype InstallmentsBasePlanType_ResubscribeState = InstallmentsBasePlanType_ResubscribeState {fromInstallmentsBasePlanType_ResubscribeState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InstallmentsBasePlanType_ResubscribeState = InstallmentsBasePlanType_ResubscribeState { fromInstallmentsBasePlanType_ResubscribeState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified state.
 pattern InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED :: InstallmentsBasePlanType_ResubscribeState
@@ -1518,27 +2137,29 @@ pattern InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEINACTIVE = Ins
   InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEUNSPECIFIED,
   InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEACTIVE,
   InstallmentsBasePlanType_ResubscribeState_RESUBSCRIBESTATEINACTIVE,
-  InstallmentsBasePlanType_ResubscribeState
-  #-}
+  InstallmentsBasePlanType_ResubscribeState #-}
 
 -- | Digital content or service classification for products distributed to users in the European Economic Area (EEA). The withdrawal regime under EEA consumer laws depends on this classification. Refer to the <https://support.google.com/googleplay/android-developer/answer/10463498 Help Center article> for more information.
-newtype ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType = ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType {fromManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType = ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType { fromManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
 
 pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED :: ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType
 pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED = ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType "WITHDRAWAL_RIGHT_TYPE_UNSPECIFIED"
 
+
 pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT :: ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType
 pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT = ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType "WITHDRAWAL_RIGHT_DIGITAL_CONTENT"
+
 
 pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE :: ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType
 pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE = ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType "WITHDRAWAL_RIGHT_SERVICE"
@@ -1547,21 +2168,20 @@ pattern ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWAL
   ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
   ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT,
   ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE,
-  ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType
-  #-}
+  ManagedProductTaxAndComplianceSettings_EeaWithdrawalRightType #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype MigrateBasePlanPricesRequest_LatencyTolerance = MigrateBasePlanPricesRequest_LatencyTolerance {fromMigrateBasePlanPricesRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype MigrateBasePlanPricesRequest_LatencyTolerance = MigrateBasePlanPricesRequest_LatencyTolerance { fromMigrateBasePlanPricesRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: MigrateBasePlanPricesRequest_LatencyTolerance
@@ -1579,21 +2199,20 @@ pattern MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERA
   MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   MigrateBasePlanPricesRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  MigrateBasePlanPricesRequest_LatencyTolerance
-  #-}
+  MigrateBasePlanPricesRequest_LatencyTolerance #-}
 
 -- | Indicates the delivery type (e.g. on-demand) of the module.
-newtype ModuleMetadata_DeliveryType = ModuleMetadata_DeliveryType {fromModuleMetadata_DeliveryType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ModuleMetadata_DeliveryType = ModuleMetadata_DeliveryType { fromModuleMetadata_DeliveryType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified delivery type.
 pattern ModuleMetadata_DeliveryType_UNKNOWNDELIVERYTYPE :: ModuleMetadata_DeliveryType
@@ -1616,21 +2235,20 @@ pattern ModuleMetadata_DeliveryType_FASTFOLLOW = ModuleMetadata_DeliveryType "FA
   ModuleMetadata_DeliveryType_INSTALLTIME,
   ModuleMetadata_DeliveryType_ONDEMAND,
   ModuleMetadata_DeliveryType_FASTFOLLOW,
-  ModuleMetadata_DeliveryType
-  #-}
+  ModuleMetadata_DeliveryType #-}
 
 -- | Indicates the type of this feature module.
-newtype ModuleMetadata_ModuleType = ModuleMetadata_ModuleType {fromModuleMetadata_ModuleType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ModuleMetadata_ModuleType = ModuleMetadata_ModuleType { fromModuleMetadata_ModuleType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unknown feature module.
 pattern ModuleMetadata_ModuleType_UNKNOWNMODULETYPE :: ModuleMetadata_ModuleType
@@ -1643,21 +2261,313 @@ pattern ModuleMetadata_ModuleType_FEATUREMODULE = ModuleMetadata_ModuleType "FEA
 {-# COMPLETE
   ModuleMetadata_ModuleType_UNKNOWNMODULETYPE,
   ModuleMetadata_ModuleType_FEATUREMODULE,
-  ModuleMetadata_ModuleType
-  #-}
+  ModuleMetadata_ModuleType #-}
+
+-- | Output only. The current state of this offer. This field cannot be changed by updating the resource. Use the dedicated endpoints instead.
+newtype OneTimeProductOffer_State = OneTimeProductOffer_State { fromOneTimeProductOffer_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Default value, should never be used.
+pattern OneTimeProductOffer_State_STATEUNSPECIFIED :: OneTimeProductOffer_State
+pattern OneTimeProductOffer_State_STATEUNSPECIFIED = OneTimeProductOffer_State "STATE_UNSPECIFIED"
+
+-- | The offer is not and has never been available to users.
+pattern OneTimeProductOffer_State_Draft :: OneTimeProductOffer_State
+pattern OneTimeProductOffer_State_Draft = OneTimeProductOffer_State "DRAFT"
+
+-- | The offer is available to users, as long as its conditions are met.
+pattern OneTimeProductOffer_State_Active :: OneTimeProductOffer_State
+pattern OneTimeProductOffer_State_Active = OneTimeProductOffer_State "ACTIVE"
+
+-- | This state is specific to pre-orders. The offer is cancelled and not available to users. All pending orders related to this offer were cancelled.
+pattern OneTimeProductOffer_State_Cancelled :: OneTimeProductOffer_State
+pattern OneTimeProductOffer_State_Cancelled = OneTimeProductOffer_State "CANCELLED"
+
+-- | This state is specific to discounted offers. The offer is no longer available to users.
+pattern OneTimeProductOffer_State_Inactive :: OneTimeProductOffer_State
+pattern OneTimeProductOffer_State_Inactive = OneTimeProductOffer_State "INACTIVE"
+
+{-# COMPLETE
+  OneTimeProductOffer_State_STATEUNSPECIFIED,
+  OneTimeProductOffer_State_Draft,
+  OneTimeProductOffer_State_Active,
+  OneTimeProductOffer_State_Cancelled,
+  OneTimeProductOffer_State_Inactive,
+  OneTimeProductOffer_State #-}
+
+-- | Required. The availability for this region.
+newtype OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability = OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability { fromOneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Unspecified availability. Must not be used.
+pattern OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED :: OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED = OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability "AVAILABILITY_UNSPECIFIED"
+
+-- | The offer is available to users.
+pattern OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_Available :: OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_Available = OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability "AVAILABLE"
+
+-- | The offer is no longer available to users. This value can only be used if the availability was previously set as AVAILABLE.
+pattern OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE :: OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE = OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability "NO_LONGER_AVAILABLE"
+
+{-# COMPLETE
+  OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED,
+  OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_Available,
+  OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE,
+  OneTimeProductOfferRegionalPricingAndAvailabilityConfig_Availability #-}
+
+-- | Required. Immutable. Specifies how price changes affect pre-existing pre-orders.
+newtype OneTimeProductPreOrderOffer_PriceChangeBehavior = OneTimeProductPreOrderOffer_PriceChangeBehavior { fromOneTimeProductPreOrderOffer_PriceChangeBehavior :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Unspecified price change behavior. Must not be used.
+pattern OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORUNSPECIFIED :: OneTimeProductPreOrderOffer_PriceChangeBehavior
+pattern OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORUNSPECIFIED = OneTimeProductPreOrderOffer_PriceChangeBehavior "PRE_ORDER_PRICE_CHANGE_BEHAVIOR_UNSPECIFIED"
+
+-- | The buyer gets charged the minimum between the initial price at the time of pre-order and the final offer price on the release date.
+pattern OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORTWOPOINTLOWEST :: OneTimeProductPreOrderOffer_PriceChangeBehavior
+pattern OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORTWOPOINTLOWEST = OneTimeProductPreOrderOffer_PriceChangeBehavior "PRE_ORDER_PRICE_CHANGE_BEHAVIOR_TWO_POINT_LOWEST"
+
+-- | The buyer gets the same price as the one they pre-ordered, regardless of any price changes that may have happened after the pre-order.
+pattern OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORNEWORDERSONLY :: OneTimeProductPreOrderOffer_PriceChangeBehavior
+pattern OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORNEWORDERSONLY = OneTimeProductPreOrderOffer_PriceChangeBehavior "PRE_ORDER_PRICE_CHANGE_BEHAVIOR_NEW_ORDERS_ONLY"
+
+{-# COMPLETE
+  OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORUNSPECIFIED,
+  OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORTWOPOINTLOWEST,
+  OneTimeProductPreOrderOffer_PriceChangeBehavior_PREORDERPRICECHANGEBEHAVIORNEWORDERSONLY,
+  OneTimeProductPreOrderOffer_PriceChangeBehavior #-}
+
+-- | Output only. The state of the purchase option, i.e., whether it\'s active. This field cannot be changed by updating the resource. Use the dedicated endpoints instead.
+newtype OneTimeProductPurchaseOption_State = OneTimeProductPurchaseOption_State { fromOneTimeProductPurchaseOption_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Default value, should never be used.
+pattern OneTimeProductPurchaseOption_State_STATEUNSPECIFIED :: OneTimeProductPurchaseOption_State
+pattern OneTimeProductPurchaseOption_State_STATEUNSPECIFIED = OneTimeProductPurchaseOption_State "STATE_UNSPECIFIED"
+
+-- | The purchase option is not and has never been available to users.
+pattern OneTimeProductPurchaseOption_State_Draft :: OneTimeProductPurchaseOption_State
+pattern OneTimeProductPurchaseOption_State_Draft = OneTimeProductPurchaseOption_State "DRAFT"
+
+-- | The purchase option is available to users.
+pattern OneTimeProductPurchaseOption_State_Active :: OneTimeProductPurchaseOption_State
+pattern OneTimeProductPurchaseOption_State_Active = OneTimeProductPurchaseOption_State "ACTIVE"
+
+-- | The purchase option is not available to users anymore.
+pattern OneTimeProductPurchaseOption_State_Inactive :: OneTimeProductPurchaseOption_State
+pattern OneTimeProductPurchaseOption_State_Inactive = OneTimeProductPurchaseOption_State "INACTIVE"
+
+-- | The purchase option is not available for purchase anymore, but we continue to expose its offer via the Play Billing Library for backwards compatibility. Only automatically migrated purchase options can be in this state.
+pattern OneTimeProductPurchaseOption_State_INACTIVEPUBLISHED :: OneTimeProductPurchaseOption_State
+pattern OneTimeProductPurchaseOption_State_INACTIVEPUBLISHED = OneTimeProductPurchaseOption_State "INACTIVE_PUBLISHED"
+
+{-# COMPLETE
+  OneTimeProductPurchaseOption_State_STATEUNSPECIFIED,
+  OneTimeProductPurchaseOption_State_Draft,
+  OneTimeProductPurchaseOption_State_Active,
+  OneTimeProductPurchaseOption_State_Inactive,
+  OneTimeProductPurchaseOption_State_INACTIVEPUBLISHED,
+  OneTimeProductPurchaseOption_State #-}
+
+-- | Required. The regional availability for the new regions config. When set to AVAILABLE, the pricing information will be used for any new regions Play may launch in the future.
+newtype OneTimeProductPurchaseOptionNewRegionsConfig_Availability = OneTimeProductPurchaseOptionNewRegionsConfig_Availability { fromOneTimeProductPurchaseOptionNewRegionsConfig_Availability :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Unspecified availability. Must not be used.
+pattern OneTimeProductPurchaseOptionNewRegionsConfig_Availability_AVAILABILITYUNSPECIFIED :: OneTimeProductPurchaseOptionNewRegionsConfig_Availability
+pattern OneTimeProductPurchaseOptionNewRegionsConfig_Availability_AVAILABILITYUNSPECIFIED = OneTimeProductPurchaseOptionNewRegionsConfig_Availability "AVAILABILITY_UNSPECIFIED"
+
+-- | The config will be used for any new regions Play may launch in the future.
+pattern OneTimeProductPurchaseOptionNewRegionsConfig_Availability_Available :: OneTimeProductPurchaseOptionNewRegionsConfig_Availability
+pattern OneTimeProductPurchaseOptionNewRegionsConfig_Availability_Available = OneTimeProductPurchaseOptionNewRegionsConfig_Availability "AVAILABLE"
+
+-- | The config is not available anymore and will not be used for any new regions Play may launch in the future. This value can only be used if the availability was previously set as AVAILABLE.
+pattern OneTimeProductPurchaseOptionNewRegionsConfig_Availability_NOLONGERAVAILABLE :: OneTimeProductPurchaseOptionNewRegionsConfig_Availability
+pattern OneTimeProductPurchaseOptionNewRegionsConfig_Availability_NOLONGERAVAILABLE = OneTimeProductPurchaseOptionNewRegionsConfig_Availability "NO_LONGER_AVAILABLE"
+
+{-# COMPLETE
+  OneTimeProductPurchaseOptionNewRegionsConfig_Availability_AVAILABILITYUNSPECIFIED,
+  OneTimeProductPurchaseOptionNewRegionsConfig_Availability_Available,
+  OneTimeProductPurchaseOptionNewRegionsConfig_Availability_NOLONGERAVAILABLE,
+  OneTimeProductPurchaseOptionNewRegionsConfig_Availability #-}
+
+-- | The availability of the purchase option.
+newtype OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability = OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability { fromOneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Unspecified availability. Must not be used.
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED :: OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED = OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability "AVAILABILITY_UNSPECIFIED"
+
+-- | The purchase option is available to users.
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_Available :: OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_Available = OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability "AVAILABLE"
+
+-- | The purchase option is no longer available to users. This value can only be used if the availability was previously set as AVAILABLE.
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE :: OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE = OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability "NO_LONGER_AVAILABLE"
+
+-- | The purchase option is initially unavailable, but made available via a released pre-order offer.
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABLEIFRELEASED :: OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability
+pattern OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABLEIFRELEASED = OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability "AVAILABLE_IF_RELEASED"
+
+{-# COMPLETE
+  OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABILITYUNSPECIFIED,
+  OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_Available,
+  OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_NOLONGERAVAILABLE,
+  OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability_AVAILABLEIFRELEASED,
+  OneTimeProductPurchaseOptionRegionalPricingAndAvailabilityConfig_Availability #-}
+
+-- | The state of the order.
+newtype Order_State = Order_State { fromOrder_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | State unspecified. This value is not used.
+pattern Order_State_STATEUNSPECIFIED :: Order_State
+pattern Order_State_STATEUNSPECIFIED = Order_State "STATE_UNSPECIFIED"
+
+-- | Order has been created and is waiting to be processed.
+pattern Order_State_Pending :: Order_State
+pattern Order_State_Pending = Order_State "PENDING"
+
+-- | Order has been successfully processed.
+pattern Order_State_Processed :: Order_State
+pattern Order_State_Processed = Order_State "PROCESSED"
+
+-- | Order was canceled before being processed.
+pattern Order_State_Canceled :: Order_State
+pattern Order_State_Canceled = Order_State "CANCELED"
+
+-- | Requested refund is waiting to be processed.
+pattern Order_State_PENDINGREFUND :: Order_State
+pattern Order_State_PENDINGREFUND = Order_State "PENDING_REFUND"
+
+-- | Part of the order amount was refunded.
+pattern Order_State_PARTIALLYREFUNDED :: Order_State
+pattern Order_State_PARTIALLYREFUNDED = Order_State "PARTIALLY_REFUNDED"
+
+-- | The full order amount was refunded.
+pattern Order_State_Refunded :: Order_State
+pattern Order_State_Refunded = Order_State "REFUNDED"
+
+{-# COMPLETE
+  Order_State_STATEUNSPECIFIED,
+  Order_State_Pending,
+  Order_State_Processed,
+  Order_State_Canceled,
+  Order_State_PENDINGREFUND,
+  Order_State_PARTIALLYREFUNDED,
+  Order_State_Refunded,
+  Order_State #-}
+
+-- | The state of the partial refund.
+newtype PartialRefundEvent_State = PartialRefundEvent_State { fromPartialRefundEvent_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | State unspecified. This value is not used.
+pattern PartialRefundEvent_State_STATEUNSPECIFIED :: PartialRefundEvent_State
+pattern PartialRefundEvent_State_STATEUNSPECIFIED = PartialRefundEvent_State "STATE_UNSPECIFIED"
+
+-- | The partial refund has been created, but not yet processed.
+pattern PartialRefundEvent_State_Pending :: PartialRefundEvent_State
+pattern PartialRefundEvent_State_Pending = PartialRefundEvent_State "PENDING"
+
+-- | The partial refund was processed successfully.
+pattern PartialRefundEvent_State_PROCESSEDSUCCESSFULLY :: PartialRefundEvent_State
+pattern PartialRefundEvent_State_PROCESSEDSUCCESSFULLY = PartialRefundEvent_State "PROCESSED_SUCCESSFULLY"
+
+{-# COMPLETE
+  PartialRefundEvent_State_STATEUNSPECIFIED,
+  PartialRefundEvent_State_Pending,
+  PartialRefundEvent_State_PROCESSEDSUCCESSFULLY,
+  PartialRefundEvent_State #-}
 
 -- | Whether users should be able to extend this prepaid base plan in Google Play surfaces. Defaults to TIME/EXTENSION/ACTIVE if not specified.
-newtype PrepaidBasePlanType_TimeExtension = PrepaidBasePlanType_TimeExtension {fromPrepaidBasePlanType_TimeExtension :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype PrepaidBasePlanType_TimeExtension = PrepaidBasePlanType_TimeExtension { fromPrepaidBasePlanType_TimeExtension :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified state.
 pattern PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONUNSPECIFIED :: PrepaidBasePlanType_TimeExtension
@@ -1675,21 +2585,185 @@ pattern PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONINACTIVE = PrepaidBasePla
   PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONUNSPECIFIED,
   PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONACTIVE,
   PrepaidBasePlanType_TimeExtension_TIMEEXTENSIONINACTIVE,
-  PrepaidBasePlanType_TimeExtension
-  #-}
+  PrepaidBasePlanType_TimeExtension #-}
+
+-- | Output only. The state of the price step-up consent.
+newtype PriceStepUpConsentDetails_State = PriceStepUpConsentDetails_State { fromPriceStepUpConsentDetails_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Unspecified consent state.
+pattern PriceStepUpConsentDetails_State_CONSENTSTATEUNSPECIFIED :: PriceStepUpConsentDetails_State
+pattern PriceStepUpConsentDetails_State_CONSENTSTATEUNSPECIFIED = PriceStepUpConsentDetails_State "CONSENT_STATE_UNSPECIFIED"
+
+-- | The user has not yet provided consent.
+pattern PriceStepUpConsentDetails_State_Pending :: PriceStepUpConsentDetails_State
+pattern PriceStepUpConsentDetails_State_Pending = PriceStepUpConsentDetails_State "PENDING"
+
+-- | The user has consented, and the new price is waiting to take effect.
+pattern PriceStepUpConsentDetails_State_Confirmed :: PriceStepUpConsentDetails_State
+pattern PriceStepUpConsentDetails_State_Confirmed = PriceStepUpConsentDetails_State "CONFIRMED"
+
+-- | The user has consented, and the new price has taken effect.
+pattern PriceStepUpConsentDetails_State_Completed :: PriceStepUpConsentDetails_State
+pattern PriceStepUpConsentDetails_State_Completed = PriceStepUpConsentDetails_State "COMPLETED"
+
+{-# COMPLETE
+  PriceStepUpConsentDetails_State_CONSENTSTATEUNSPECIFIED,
+  PriceStepUpConsentDetails_State_Pending,
+  PriceStepUpConsentDetails_State_Confirmed,
+  PriceStepUpConsentDetails_State_Completed,
+  PriceStepUpConsentDetails_State #-}
+
+-- | Output only. The consumption state of the purchase.
+newtype ProductOfferDetails_ConsumptionState = ProductOfferDetails_ConsumptionState { fromProductOfferDetails_ConsumptionState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Consumption state unspecified. This value should never be set.
+pattern ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEUNSPECIFIED :: ProductOfferDetails_ConsumptionState
+pattern ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEUNSPECIFIED = ProductOfferDetails_ConsumptionState "CONSUMPTION_STATE_UNSPECIFIED"
+
+-- | Yet to be consumed.
+pattern ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEYETTOBECONSUMED :: ProductOfferDetails_ConsumptionState
+pattern ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEYETTOBECONSUMED = ProductOfferDetails_ConsumptionState "CONSUMPTION_STATE_YET_TO_BE_CONSUMED"
+
+-- | Consumed already.
+pattern ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATECONSUMED :: ProductOfferDetails_ConsumptionState
+pattern ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATECONSUMED = ProductOfferDetails_ConsumptionState "CONSUMPTION_STATE_CONSUMED"
+
+{-# COMPLETE
+  ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEUNSPECIFIED,
+  ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATEYETTOBECONSUMED,
+  ProductOfferDetails_ConsumptionState_CONSUMPTIONSTATECONSUMED,
+  ProductOfferDetails_ConsumptionState #-}
+
+-- | Output only. The acknowledgement state of the purchase.
+newtype ProductPurchaseV2_AcknowledgementState = ProductPurchaseV2_AcknowledgementState { fromProductPurchaseV2_AcknowledgementState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Unspecified acknowledgement state.
+pattern ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED :: ProductPurchaseV2_AcknowledgementState
+pattern ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED = ProductPurchaseV2_AcknowledgementState "ACKNOWLEDGEMENT_STATE_UNSPECIFIED"
+
+-- | The purchase is not acknowledged yet.
+pattern ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEPENDING :: ProductPurchaseV2_AcknowledgementState
+pattern ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEPENDING = ProductPurchaseV2_AcknowledgementState "ACKNOWLEDGEMENT_STATE_PENDING"
+
+-- | The purchase is acknowledged.
+pattern ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLEDGED :: ProductPurchaseV2_AcknowledgementState
+pattern ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLEDGED = ProductPurchaseV2_AcknowledgementState "ACKNOWLEDGEMENT_STATE_ACKNOWLEDGED"
+
+{-# COMPLETE
+  ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED,
+  ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEPENDING,
+  ProductPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLEDGED,
+  ProductPurchaseV2_AcknowledgementState #-}
+
+-- | Optional. Digital content or service classification for products distributed to users in eligible regions. If unset, it defaults to @WITHDRAWAL_RIGHT_DIGITAL_CONTENT@. Refer to the <https://support.google.com/googleplay/android-developer/answer/10463498 Help Center article> for more information.
+newtype PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType = PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType { fromPurchaseOptionTaxAndComplianceSettings_WithdrawalRightType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+
+pattern PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED :: PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType
+pattern PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED = PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType "WITHDRAWAL_RIGHT_TYPE_UNSPECIFIED"
+
+
+pattern PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT :: PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType
+pattern PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT = PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType "WITHDRAWAL_RIGHT_DIGITAL_CONTENT"
+
+
+pattern PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTSERVICE :: PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType
+pattern PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTSERVICE = PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType "WITHDRAWAL_RIGHT_SERVICE"
+
+{-# COMPLETE
+  PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
+  PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT,
+  PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType_WITHDRAWALRIGHTSERVICE,
+  PurchaseOptionTaxAndComplianceSettings_WithdrawalRightType #-}
+
+-- | Output only. The purchase state of the purchase.
+newtype PurchaseStateContext_PurchaseState = PurchaseStateContext_PurchaseState { fromPurchaseStateContext_PurchaseState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Purchase state unspecified. This value should never be set.
+pattern PurchaseStateContext_PurchaseState_PURCHASESTATEUNSPECIFIED :: PurchaseStateContext_PurchaseState
+pattern PurchaseStateContext_PurchaseState_PURCHASESTATEUNSPECIFIED = PurchaseStateContext_PurchaseState "PURCHASE_STATE_UNSPECIFIED"
+
+-- | Purchased successfully.
+pattern PurchaseStateContext_PurchaseState_Purchased :: PurchaseStateContext_PurchaseState
+pattern PurchaseStateContext_PurchaseState_Purchased = PurchaseStateContext_PurchaseState "PURCHASED"
+
+-- | Purchase canceled.
+pattern PurchaseStateContext_PurchaseState_Cancelled :: PurchaseStateContext_PurchaseState
+pattern PurchaseStateContext_PurchaseState_Cancelled = PurchaseStateContext_PurchaseState "CANCELLED"
+
+-- | The purchase is in a pending state and has not yet been completed. For more information on handling pending purchases, see https:\/\/developer.android.com\/google\/play\/billing\/integrate#pending.
+pattern PurchaseStateContext_PurchaseState_Pending :: PurchaseStateContext_PurchaseState
+pattern PurchaseStateContext_PurchaseState_Pending = PurchaseStateContext_PurchaseState "PENDING"
+
+{-# COMPLETE
+  PurchaseStateContext_PurchaseState_PURCHASESTATEUNSPECIFIED,
+  PurchaseStateContext_PurchaseState_Purchased,
+  PurchaseStateContext_PurchaseState_Cancelled,
+  PurchaseStateContext_PurchaseState_Pending,
+  PurchaseStateContext_PurchaseState #-}
 
 -- | Input only. Provided during the call to Create. Must only be used when migrating a subscription from manual monthly reporting to automated reporting.
-newtype RecurringExternalTransaction_MigratedTransactionProgram = RecurringExternalTransaction_MigratedTransactionProgram {fromRecurringExternalTransaction_MigratedTransactionProgram :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype RecurringExternalTransaction_MigratedTransactionProgram = RecurringExternalTransaction_MigratedTransactionProgram { fromRecurringExternalTransaction_MigratedTransactionProgram :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified transaction program. Not used.
 pattern RecurringExternalTransaction_MigratedTransactionProgram_EXTERNALTRANSACTIONPROGRAMUNSPECIFIED :: RecurringExternalTransaction_MigratedTransactionProgram
@@ -1707,21 +2781,51 @@ pattern RecurringExternalTransaction_MigratedTransactionProgram_ALTERNATIVEBILLI
   RecurringExternalTransaction_MigratedTransactionProgram_EXTERNALTRANSACTIONPROGRAMUNSPECIFIED,
   RecurringExternalTransaction_MigratedTransactionProgram_USERCHOICEBILLING,
   RecurringExternalTransaction_MigratedTransactionProgram_ALTERNATIVEBILLINGONLY,
-  RecurringExternalTransaction_MigratedTransactionProgram
-  #-}
+  RecurringExternalTransaction_MigratedTransactionProgram #-}
+
+-- | The reason the order was refunded.
+newtype RefundEvent_RefundReason = RefundEvent_RefundReason { fromRefundEvent_RefundReason :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Refund reason unspecified. This value is not used.
+pattern RefundEvent_RefundReason_REFUNDREASONUNSPECIFIED :: RefundEvent_RefundReason
+pattern RefundEvent_RefundReason_REFUNDREASONUNSPECIFIED = RefundEvent_RefundReason "REFUND_REASON_UNSPECIFIED"
+
+-- | The order was refunded for a reason other than the listed reasons here.
+pattern RefundEvent_RefundReason_Other :: RefundEvent_RefundReason
+pattern RefundEvent_RefundReason_Other = RefundEvent_RefundReason "OTHER"
+
+-- | The order was charged back.
+pattern RefundEvent_RefundReason_Chargeback :: RefundEvent_RefundReason
+pattern RefundEvent_RefundReason_Chargeback = RefundEvent_RefundReason "CHARGEBACK"
+
+{-# COMPLETE
+  RefundEvent_RefundReason_REFUNDREASONUNSPECIFIED,
+  RefundEvent_RefundReason_Other,
+  RefundEvent_RefundReason_Chargeback,
+  RefundEvent_RefundReason #-}
 
 -- | Optional. The requested type of price increase
-newtype RegionalPriceMigrationConfig_PriceIncreaseType = RegionalPriceMigrationConfig_PriceIncreaseType {fromRegionalPriceMigrationConfig_PriceIncreaseType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype RegionalPriceMigrationConfig_PriceIncreaseType = RegionalPriceMigrationConfig_PriceIncreaseType { fromRegionalPriceMigrationConfig_PriceIncreaseType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified state.
 pattern RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEUNSPECIFIED :: RegionalPriceMigrationConfig_PriceIncreaseType
@@ -1739,21 +2843,117 @@ pattern RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEOPTOUT =
   RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEUNSPECIFIED,
   RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEOPTIN,
   RegionalPriceMigrationConfig_PriceIncreaseType_PRICEINCREASETYPEOPTOUT,
-  RegionalPriceMigrationConfig_PriceIncreaseType
-  #-}
+  RegionalPriceMigrationConfig_PriceIncreaseType #-}
 
 -- | To collect communications or amusement taxes in the United States, choose the appropriate tax category. <https://support.google.com/googleplay/android-developer/answer/10463498#streaming_tax Learn more>.
-newtype RegionalTaxRateInfo_StreamingTaxType = RegionalTaxRateInfo_StreamingTaxType {fromRegionalTaxRateInfo_StreamingTaxType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype RegionalTaxConfig_StreamingTaxType = RegionalTaxConfig_StreamingTaxType { fromRegionalTaxConfig_StreamingTaxType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | No telecommunications tax collected.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_UNSPECIFIED"
+
+-- | US-specific telecommunications tax tier for video streaming, on demand, rentals \/ subscriptions \/ pay-per-view.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEORENTAL :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEORENTAL = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_TELCO_VIDEO_RENTAL"
+
+-- | US-specific telecommunications tax tier for video streaming of pre-recorded content like movies, tv shows.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOSALES :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOSALES = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_TELCO_VIDEO_SALES"
+
+-- | US-specific telecommunications tax tier for video streaming of multi-channel programming.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOMULTICHANNEL :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOMULTICHANNEL = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_TELCO_VIDEO_MULTI_CHANNEL"
+
+-- | US-specific telecommunications tax tier for audio streaming, rental \/ subscription.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIORENTAL :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIORENTAL = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_TELCO_AUDIO_RENTAL"
+
+-- | US-specific telecommunications tax tier for audio streaming, sale \/ permanent download.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOSALES :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOSALES = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_TELCO_AUDIO_SALES"
+
+-- | US-specific telecommunications tax tier for multi channel audio streaming like radio.
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOMULTICHANNEL :: RegionalTaxConfig_StreamingTaxType
+pattern RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOMULTICHANNEL = RegionalTaxConfig_StreamingTaxType "STREAMING_TAX_TYPE_TELCO_AUDIO_MULTI_CHANNEL"
+
+{-# COMPLETE
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED,
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEORENTAL,
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOSALES,
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOVIDEOMULTICHANNEL,
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIORENTAL,
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOSALES,
+  RegionalTaxConfig_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOMULTICHANNEL,
+  RegionalTaxConfig_StreamingTaxType #-}
+
+-- | Tax tier to specify reduced tax rate. Developers who sell digital news, magazines, newspapers, books, or audiobooks in various regions may be eligible for reduced tax rates. <https://support.google.com/googleplay/android-developer/answer/10463498 Learn more>.
+newtype RegionalTaxConfig_TaxTier = RegionalTaxConfig_TaxTier { fromRegionalTaxConfig_TaxTier :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+
+pattern RegionalTaxConfig_TaxTier_TAXTIERUNSPECIFIED :: RegionalTaxConfig_TaxTier
+pattern RegionalTaxConfig_TaxTier_TAXTIERUNSPECIFIED = RegionalTaxConfig_TaxTier "TAX_TIER_UNSPECIFIED"
+
+
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_BOOKS_1 :: RegionalTaxConfig_TaxTier
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_BOOKS_1 = RegionalTaxConfig_TaxTier "TAX_TIER_BOOKS_1"
+
+
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_1 :: RegionalTaxConfig_TaxTier
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_1 = RegionalTaxConfig_TaxTier "TAX_TIER_NEWS_1"
+
+
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_2 :: RegionalTaxConfig_TaxTier
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_2 = RegionalTaxConfig_TaxTier "TAX_TIER_NEWS_2"
+
+
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1 :: RegionalTaxConfig_TaxTier
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1 = RegionalTaxConfig_TaxTier "TAX_TIER_MUSIC_OR_AUDIO_1"
+
+
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1 :: RegionalTaxConfig_TaxTier
+pattern RegionalTaxConfig_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1 = RegionalTaxConfig_TaxTier "TAX_TIER_LIVE_OR_BROADCAST_1"
+
+{-# COMPLETE
+  RegionalTaxConfig_TaxTier_TAXTIERUNSPECIFIED,
+  RegionalTaxConfig_TaxTier_TAX_TIER_BOOKS_1,
+  RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_1,
+  RegionalTaxConfig_TaxTier_TAX_TIER_NEWS_2,
+  RegionalTaxConfig_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1,
+  RegionalTaxConfig_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1,
+  RegionalTaxConfig_TaxTier #-}
+
+-- | To collect communications or amusement taxes in the United States, choose the appropriate tax category. <https://support.google.com/googleplay/android-developer/answer/10463498#streaming_tax Learn more>.
+newtype RegionalTaxRateInfo_StreamingTaxType = RegionalTaxRateInfo_StreamingTaxType { fromRegionalTaxRateInfo_StreamingTaxType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | No telecommunications tax collected.
 pattern RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPEUNSPECIFIED :: RegionalTaxRateInfo_StreamingTaxType
@@ -1791,36 +2991,41 @@ pattern RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOMULTICHAN
   RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIORENTAL,
   RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOSALES,
   RegionalTaxRateInfo_StreamingTaxType_STREAMINGTAXTYPETELCOAUDIOMULTICHANNEL,
-  RegionalTaxRateInfo_StreamingTaxType
-  #-}
+  RegionalTaxRateInfo_StreamingTaxType #-}
 
 -- | Tax tier to specify reduced tax rate. Developers who sell digital news, magazines, newspapers, books, or audiobooks in various regions may be eligible for reduced tax rates. <https://support.google.com/googleplay/android-developer/answer/10463498 Learn more>.
-newtype RegionalTaxRateInfo_TaxTier = RegionalTaxRateInfo_TaxTier {fromRegionalTaxRateInfo_TaxTier :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype RegionalTaxRateInfo_TaxTier = RegionalTaxRateInfo_TaxTier { fromRegionalTaxRateInfo_TaxTier :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
 
 pattern RegionalTaxRateInfo_TaxTier_TAXTIERUNSPECIFIED :: RegionalTaxRateInfo_TaxTier
 pattern RegionalTaxRateInfo_TaxTier_TAXTIERUNSPECIFIED = RegionalTaxRateInfo_TaxTier "TAX_TIER_UNSPECIFIED"
 
+
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_BOOKS_1 :: RegionalTaxRateInfo_TaxTier
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_BOOKS_1 = RegionalTaxRateInfo_TaxTier "TAX_TIER_BOOKS_1"
+
 
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_1 :: RegionalTaxRateInfo_TaxTier
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_1 = RegionalTaxRateInfo_TaxTier "TAX_TIER_NEWS_1"
 
+
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_2 :: RegionalTaxRateInfo_TaxTier
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_2 = RegionalTaxRateInfo_TaxTier "TAX_TIER_NEWS_2"
 
+
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1 :: RegionalTaxRateInfo_TaxTier
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1 = RegionalTaxRateInfo_TaxTier "TAX_TIER_MUSIC_OR_AUDIO_1"
+
 
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1 :: RegionalTaxRateInfo_TaxTier
 pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1 = RegionalTaxRateInfo_TaxTier "TAX_TIER_LIVE_OR_BROADCAST_1"
@@ -1832,21 +3037,20 @@ pattern RegionalTaxRateInfo_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1 = RegionalTaxRa
   RegionalTaxRateInfo_TaxTier_TAX_TIER_NEWS_2,
   RegionalTaxRateInfo_TaxTier_TAX_TIER_MUSIC_OR_AUDIO_1,
   RegionalTaxRateInfo_TaxTier_TAX_TIER_LIVE_OR_BROADCAST_1,
-  RegionalTaxRateInfo_TaxTier
-  #-}
+  RegionalTaxRateInfo_TaxTier #-}
 
 -- | Alias for a screen density.
-newtype ScreenDensity_DensityAlias = ScreenDensity_DensityAlias {fromScreenDensity_DensityAlias :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype ScreenDensity_DensityAlias = ScreenDensity_DensityAlias { fromScreenDensity_DensityAlias :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified screen density.
 pattern ScreenDensity_DensityAlias_DENSITYUNSPECIFIED :: ScreenDensity_DensityAlias
@@ -1894,21 +3098,56 @@ pattern ScreenDensity_DensityAlias_Xxxhdpi = ScreenDensity_DensityAlias "XXXHDPI
   ScreenDensity_DensityAlias_Xhdpi,
   ScreenDensity_DensityAlias_Xxhdpi,
   ScreenDensity_DensityAlias_Xxxhdpi,
-  ScreenDensity_DensityAlias
-  #-}
+  ScreenDensity_DensityAlias #-}
+
+-- | The pricing phase for the billing period funded by this order.
+newtype SubscriptionDetails_OfferPhase = SubscriptionDetails_OfferPhase { fromSubscriptionDetails_OfferPhase :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Offer phase unspecified. This value is not used.
+pattern SubscriptionDetails_OfferPhase_OFFERPHASEUNSPECIFIED :: SubscriptionDetails_OfferPhase
+pattern SubscriptionDetails_OfferPhase_OFFERPHASEUNSPECIFIED = SubscriptionDetails_OfferPhase "OFFER_PHASE_UNSPECIFIED"
+
+-- | The order funds a base price period.
+pattern SubscriptionDetails_OfferPhase_Base :: SubscriptionDetails_OfferPhase
+pattern SubscriptionDetails_OfferPhase_Base = SubscriptionDetails_OfferPhase "BASE"
+
+-- | The order funds an introductory pricing period.
+pattern SubscriptionDetails_OfferPhase_Introductory :: SubscriptionDetails_OfferPhase
+pattern SubscriptionDetails_OfferPhase_Introductory = SubscriptionDetails_OfferPhase "INTRODUCTORY"
+
+-- | The order funds a free trial period.
+pattern SubscriptionDetails_OfferPhase_FREETRIAL :: SubscriptionDetails_OfferPhase
+pattern SubscriptionDetails_OfferPhase_FREETRIAL = SubscriptionDetails_OfferPhase "FREE_TRIAL"
+
+{-# COMPLETE
+  SubscriptionDetails_OfferPhase_OFFERPHASEUNSPECIFIED,
+  SubscriptionDetails_OfferPhase_Base,
+  SubscriptionDetails_OfferPhase_Introductory,
+  SubscriptionDetails_OfferPhase_FREETRIAL,
+  SubscriptionDetails_OfferPhase #-}
 
 -- | Price change mode specifies how the subscription item price is changing.
-newtype SubscriptionItemPriceChangeDetails_PriceChangeMode = SubscriptionItemPriceChangeDetails_PriceChangeMode {fromSubscriptionItemPriceChangeDetails_PriceChangeMode :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype SubscriptionItemPriceChangeDetails_PriceChangeMode = SubscriptionItemPriceChangeDetails_PriceChangeMode { fromSubscriptionItemPriceChangeDetails_PriceChangeMode :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Price change mode unspecified. This value should never be set.
 pattern SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICECHANGEMODEUNSPECIFIED :: SubscriptionItemPriceChangeDetails_PriceChangeMode
@@ -1931,21 +3170,20 @@ pattern SubscriptionItemPriceChangeDetails_PriceChangeMode_OPTOUTPRICEINCREASE =
   SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICEDECREASE,
   SubscriptionItemPriceChangeDetails_PriceChangeMode_PRICEINCREASE,
   SubscriptionItemPriceChangeDetails_PriceChangeMode_OPTOUTPRICEINCREASE,
-  SubscriptionItemPriceChangeDetails_PriceChangeMode
-  #-}
+  SubscriptionItemPriceChangeDetails_PriceChangeMode #-}
 
 -- | State the price change is currently in.
-newtype SubscriptionItemPriceChangeDetails_PriceChangeState = SubscriptionItemPriceChangeDetails_PriceChangeState {fromSubscriptionItemPriceChangeDetails_PriceChangeState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype SubscriptionItemPriceChangeDetails_PriceChangeState = SubscriptionItemPriceChangeDetails_PriceChangeState { fromSubscriptionItemPriceChangeDetails_PriceChangeState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Price change state unspecified. This value should not be used.
 pattern SubscriptionItemPriceChangeDetails_PriceChangeState_PRICECHANGESTATEUNSPECIFIED :: SubscriptionItemPriceChangeDetails_PriceChangeState
@@ -1963,26 +3201,30 @@ pattern SubscriptionItemPriceChangeDetails_PriceChangeState_Confirmed = Subscrip
 pattern SubscriptionItemPriceChangeDetails_PriceChangeState_Applied :: SubscriptionItemPriceChangeDetails_PriceChangeState
 pattern SubscriptionItemPriceChangeDetails_PriceChangeState_Applied = SubscriptionItemPriceChangeDetails_PriceChangeState "APPLIED"
 
+-- | The price change was canceled.
+pattern SubscriptionItemPriceChangeDetails_PriceChangeState_Canceled :: SubscriptionItemPriceChangeDetails_PriceChangeState
+pattern SubscriptionItemPriceChangeDetails_PriceChangeState_Canceled = SubscriptionItemPriceChangeDetails_PriceChangeState "CANCELED"
+
 {-# COMPLETE
   SubscriptionItemPriceChangeDetails_PriceChangeState_PRICECHANGESTATEUNSPECIFIED,
   SubscriptionItemPriceChangeDetails_PriceChangeState_Outstanding,
   SubscriptionItemPriceChangeDetails_PriceChangeState_Confirmed,
   SubscriptionItemPriceChangeDetails_PriceChangeState_Applied,
-  SubscriptionItemPriceChangeDetails_PriceChangeState
-  #-}
+  SubscriptionItemPriceChangeDetails_PriceChangeState_Canceled,
+  SubscriptionItemPriceChangeDetails_PriceChangeState #-}
 
 -- | Output only. The current state of this offer. Can be changed using Activate and Deactivate actions. NB: the base plan state supersedes this state, so an active offer may not be available if the base plan is not active.
-newtype SubscriptionOffer_State = SubscriptionOffer_State {fromSubscriptionOffer_State :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype SubscriptionOffer_State = SubscriptionOffer_State { fromSubscriptionOffer_State :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Default value, should never be used.
 pattern SubscriptionOffer_State_STATEUNSPECIFIED :: SubscriptionOffer_State
@@ -2005,21 +3247,20 @@ pattern SubscriptionOffer_State_Inactive = SubscriptionOffer_State "INACTIVE"
   SubscriptionOffer_State_Draft,
   SubscriptionOffer_State_Active,
   SubscriptionOffer_State_Inactive,
-  SubscriptionOffer_State
-  #-}
+  SubscriptionOffer_State #-}
 
 -- | The acknowledgement state of the subscription.
-newtype SubscriptionPurchaseV2_AcknowledgementState = SubscriptionPurchaseV2_AcknowledgementState {fromSubscriptionPurchaseV2_AcknowledgementState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype SubscriptionPurchaseV2_AcknowledgementState = SubscriptionPurchaseV2_AcknowledgementState { fromSubscriptionPurchaseV2_AcknowledgementState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified acknowledgement state.
 pattern SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED :: SubscriptionPurchaseV2_AcknowledgementState
@@ -2037,21 +3278,20 @@ pattern SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLE
   SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEUNSPECIFIED,
   SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEPENDING,
   SubscriptionPurchaseV2_AcknowledgementState_ACKNOWLEDGEMENTSTATEACKNOWLEDGED,
-  SubscriptionPurchaseV2_AcknowledgementState
-  #-}
+  SubscriptionPurchaseV2_AcknowledgementState #-}
 
 -- | The current state of the subscription.
-newtype SubscriptionPurchaseV2_SubscriptionState = SubscriptionPurchaseV2_SubscriptionState {fromSubscriptionPurchaseV2_SubscriptionState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype SubscriptionPurchaseV2_SubscriptionState = SubscriptionPurchaseV2_SubscriptionState { fromSubscriptionPurchaseV2_SubscriptionState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified subscription state.
 pattern SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEUNSPECIFIED :: SubscriptionPurchaseV2_SubscriptionState
@@ -2099,27 +3339,29 @@ pattern SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEPENDINGPURCHAS
   SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATECANCELED,
   SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEEXPIRED,
   SubscriptionPurchaseV2_SubscriptionState_SUBSCRIPTIONSTATEPENDINGPURCHASECANCELED,
-  SubscriptionPurchaseV2_SubscriptionState
-  #-}
+  SubscriptionPurchaseV2_SubscriptionState #-}
 
 -- | Digital content or service classification for products distributed to users in the European Economic Area (EEA). The withdrawal regime under EEA consumer laws depends on this classification. Refer to the <https://support.google.com/googleplay/android-developer/answer/10463498 Help Center article> for more information.
-newtype SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType = SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType {fromSubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType = SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType { fromSubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
 
 pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED :: SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType
 pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED = SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType "WITHDRAWAL_RIGHT_TYPE_UNSPECIFIED"
 
+
 pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT :: SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType
 pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT = SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType "WITHDRAWAL_RIGHT_DIGITAL_CONTENT"
+
 
 pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE :: SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType
 pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE = SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType "WITHDRAWAL_RIGHT_SERVICE"
@@ -2128,21 +3370,46 @@ pattern SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRI
   SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTTYPEUNSPECIFIED,
   SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTDIGITALCONTENT,
   SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType_WITHDRAWALRIGHTSERVICE,
-  SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType
-  #-}
+  SubscriptionTaxAndComplianceSettings_EeaWithdrawalRightType #-}
+
+-- | The fop type of the test purchase.
+newtype TestPurchaseContext_FopType = TestPurchaseContext_FopType { fromTestPurchaseContext_FopType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Fop type unspecified. This value should never be set.
+pattern TestPurchaseContext_FopType_FOPTYPEUNSPECIFIED :: TestPurchaseContext_FopType
+pattern TestPurchaseContext_FopType_FOPTYPEUNSPECIFIED = TestPurchaseContext_FopType "FOP_TYPE_UNSPECIFIED"
+
+-- | The purchase was made using a test card.
+pattern TestPurchaseContext_FopType_Test :: TestPurchaseContext_FopType
+pattern TestPurchaseContext_FopType_Test = TestPurchaseContext_FopType "TEST"
+
+{-# COMPLETE
+  TestPurchaseContext_FopType_FOPTYPEUNSPECIFIED,
+  TestPurchaseContext_FopType_Test,
+  TestPurchaseContext_FopType #-}
 
 -- | Alias for texture compression format.
-newtype TextureCompressionFormat_Alias = TextureCompressionFormat_Alias {fromTextureCompressionFormat_Alias :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype TextureCompressionFormat_Alias = TextureCompressionFormat_Alias { fromTextureCompressionFormat_Alias :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified format.
 pattern TextureCompressionFormat_Alias_UNSPECIFIEDTEXTURECOMPRESSIONFORMAT :: TextureCompressionFormat_Alias
@@ -2200,21 +3467,20 @@ pattern TextureCompressionFormat_Alias_ETC2 = TextureCompressionFormat_Alias "ET
   TextureCompressionFormat_Alias_Pvrtc,
   TextureCompressionFormat_Alias_Astc,
   TextureCompressionFormat_Alias_ETC2,
-  TextureCompressionFormat_Alias
-  #-}
+  TextureCompressionFormat_Alias #-}
 
 -- | Required. Form factor of the new track. Defaults to the default track.
-newtype TrackConfig_FormFactor = TrackConfig_FormFactor {fromTrackConfig_FormFactor :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype TrackConfig_FormFactor = TrackConfig_FormFactor { fromTrackConfig_FormFactor :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Fallback value, do not use.
 pattern TrackConfig_FormFactor_FORMFACTORUNSPECIFIED :: TrackConfig_FormFactor
@@ -2237,21 +3503,20 @@ pattern TrackConfig_FormFactor_Automotive = TrackConfig_FormFactor "AUTOMOTIVE"
   TrackConfig_FormFactor_Default,
   TrackConfig_FormFactor_Wear,
   TrackConfig_FormFactor_Automotive,
-  TrackConfig_FormFactor
-  #-}
+  TrackConfig_FormFactor #-}
 
 -- | Required. Type of the new track. Currently, the only supported value is closedTesting.
-newtype TrackConfig_Type = TrackConfig_Type {fromTrackConfig_Type :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype TrackConfig_Type = TrackConfig_Type { fromTrackConfig_Type :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Fallback value, do not use.
 pattern TrackConfig_Type_TRACKTYPEUNSPECIFIED :: TrackConfig_Type
@@ -2264,21 +3529,20 @@ pattern TrackConfig_Type_CLOSEDTESTING = TrackConfig_Type "CLOSED_TESTING"
 {-# COMPLETE
   TrackConfig_Type_TRACKTYPEUNSPECIFIED,
   TrackConfig_Type_CLOSEDTESTING,
-  TrackConfig_Type
-  #-}
+  TrackConfig_Type #-}
 
 -- | The status of the release.
-newtype TrackRelease_Status = TrackRelease_Status {fromTrackRelease_Status :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype TrackRelease_Status = TrackRelease_Status { fromTrackRelease_Status :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified status.
 pattern TrackRelease_Status_StatusUnspecified :: TrackRelease_Status
@@ -2306,21 +3570,82 @@ pattern TrackRelease_Status_Completed = TrackRelease_Status "completed"
   TrackRelease_Status_InProgress,
   TrackRelease_Status_Halted,
   TrackRelease_Status_Completed,
-  TrackRelease_Status
-  #-}
+  TrackRelease_Status #-}
+
+-- | Optional. The latency tolerance for the propagation of this offer update. Defaults to latency-sensitive.
+newtype UpdateOneTimeProductOfferRequest_LatencyTolerance = UpdateOneTimeProductOfferRequest_LatencyTolerance { fromUpdateOneTimeProductOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: UpdateOneTimeProductOfferRequest_LatencyTolerance
+pattern UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = UpdateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: UpdateOneTimeProductOfferRequest_LatencyTolerance
+pattern UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = UpdateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: UpdateOneTimeProductOfferRequest_LatencyTolerance
+pattern UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = UpdateOneTimeProductOfferRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  UpdateOneTimeProductOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  UpdateOneTimeProductOfferRequest_LatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product upsert. Defaults to latency-sensitive.
+newtype UpdateOneTimeProductRequest_LatencyTolerance = UpdateOneTimeProductRequest_LatencyTolerance { fromUpdateOneTimeProductRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: UpdateOneTimeProductRequest_LatencyTolerance
+pattern UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = UpdateOneTimeProductRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: UpdateOneTimeProductRequest_LatencyTolerance
+pattern UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = UpdateOneTimeProductRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: UpdateOneTimeProductRequest_LatencyTolerance
+pattern UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = UpdateOneTimeProductRequest_LatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  UpdateOneTimeProductRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  UpdateOneTimeProductRequest_LatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype UpdateSubscriptionOfferRequest_LatencyTolerance = UpdateSubscriptionOfferRequest_LatencyTolerance {fromUpdateSubscriptionOfferRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype UpdateSubscriptionOfferRequest_LatencyTolerance = UpdateSubscriptionOfferRequest_LatencyTolerance { fromUpdateSubscriptionOfferRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: UpdateSubscriptionOfferRequest_LatencyTolerance
@@ -2338,21 +3663,20 @@ pattern UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLE
   UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   UpdateSubscriptionOfferRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  UpdateSubscriptionOfferRequest_LatencyTolerance
-  #-}
+  UpdateSubscriptionOfferRequest_LatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype UpdateSubscriptionRequest_LatencyTolerance = UpdateSubscriptionRequest_LatencyTolerance {fromUpdateSubscriptionRequest_LatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype UpdateSubscriptionRequest_LatencyTolerance = UpdateSubscriptionRequest_LatencyTolerance { fromUpdateSubscriptionRequest_LatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: UpdateSubscriptionRequest_LatencyTolerance
@@ -2370,21 +3694,20 @@ pattern UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCE
   UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   UpdateSubscriptionRequest_LatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  UpdateSubscriptionRequest_LatencyTolerance
-  #-}
+  UpdateSubscriptionRequest_LatencyTolerance #-}
 
 -- | Output only. The state of the user\'s access to the Play Console.
-newtype User_AccessState = User_AccessState {fromUser_AccessState :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype User_AccessState = User_AccessState { fromUser_AccessState :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unknown or unspecified access state.
 pattern User_AccessState_ACCESSSTATEUNSPECIFIED :: User_AccessState
@@ -2412,20 +3735,19 @@ pattern User_AccessState_ACCESSEXPIRED = User_AccessState "ACCESS_EXPIRED"
   User_AccessState_INVITATIONEXPIRED,
   User_AccessState_ACCESSGRANTED,
   User_AccessState_ACCESSEXPIRED,
-  User_AccessState
-  #-}
+  User_AccessState #-}
 
-newtype User_DeveloperAccountPermissionsItem = User_DeveloperAccountPermissionsItem {fromUser_DeveloperAccountPermissionsItem :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype User_DeveloperAccountPermissionsItem = User_DeveloperAccountPermissionsItem { fromUser_DeveloperAccountPermissionsItem :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unknown or unspecified permission.
 pattern User_DeveloperAccountPermissionsItem_DEVELOPERLEVELPERMISSIONUNSPECIFIED :: User_DeveloperAccountPermissionsItem
@@ -2523,21 +3845,20 @@ pattern User_DeveloperAccountPermissionsItem_CANMANAGEDEEPLINKSGLOBAL = User_Dev
   User_DeveloperAccountPermissionsItem_CANVIEWNONFINANCIALDATAGLOBAL,
   User_DeveloperAccountPermissionsItem_CANVIEWAPPQUALITYGLOBAL,
   User_DeveloperAccountPermissionsItem_CANMANAGEDEEPLINKSGLOBAL,
-  User_DeveloperAccountPermissionsItem
-  #-}
+  User_DeveloperAccountPermissionsItem #-}
 
 -- | The type of the deobfuscation file.
-newtype EditsDeobfuscationfilesUploadDeobfuscationFileType = EditsDeobfuscationfilesUploadDeobfuscationFileType {fromEditsDeobfuscationfilesUploadDeobfuscationFileType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsDeobfuscationfilesUploadDeobfuscationFileType = EditsDeobfuscationfilesUploadDeobfuscationFileType { fromEditsDeobfuscationfilesUploadDeobfuscationFileType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified deobfuscation file type.
 pattern EditsDeobfuscationfilesUploadDeobfuscationFileType_DeobfuscationFileTypeUnspecified :: EditsDeobfuscationfilesUploadDeobfuscationFileType
@@ -2555,21 +3876,20 @@ pattern EditsDeobfuscationfilesUploadDeobfuscationFileType_NativeCode = EditsDeo
   EditsDeobfuscationfilesUploadDeobfuscationFileType_DeobfuscationFileTypeUnspecified,
   EditsDeobfuscationfilesUploadDeobfuscationFileType_Proguard,
   EditsDeobfuscationfilesUploadDeobfuscationFileType_NativeCode,
-  EditsDeobfuscationfilesUploadDeobfuscationFileType
-  #-}
+  EditsDeobfuscationfilesUploadDeobfuscationFileType #-}
 
 -- | The file type of the file configuration which is being read or modified.
-newtype EditsExpansionfilesGetExpansionFileType = EditsExpansionfilesGetExpansionFileType {fromEditsExpansionfilesGetExpansionFileType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsExpansionfilesGetExpansionFileType = EditsExpansionfilesGetExpansionFileType { fromEditsExpansionfilesGetExpansionFileType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified expansion file type.
 pattern EditsExpansionfilesGetExpansionFileType_ExpansionFileTypeUnspecified :: EditsExpansionfilesGetExpansionFileType
@@ -2587,21 +3907,20 @@ pattern EditsExpansionfilesGetExpansionFileType_Patch' = EditsExpansionfilesGetE
   EditsExpansionfilesGetExpansionFileType_ExpansionFileTypeUnspecified,
   EditsExpansionfilesGetExpansionFileType_Main,
   EditsExpansionfilesGetExpansionFileType_Patch',
-  EditsExpansionfilesGetExpansionFileType
-  #-}
+  EditsExpansionfilesGetExpansionFileType #-}
 
 -- | The file type of the expansion file configuration which is being updated.
-newtype EditsExpansionfilesPatchExpansionFileType = EditsExpansionfilesPatchExpansionFileType {fromEditsExpansionfilesPatchExpansionFileType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsExpansionfilesPatchExpansionFileType = EditsExpansionfilesPatchExpansionFileType { fromEditsExpansionfilesPatchExpansionFileType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified expansion file type.
 pattern EditsExpansionfilesPatchExpansionFileType_ExpansionFileTypeUnspecified :: EditsExpansionfilesPatchExpansionFileType
@@ -2619,21 +3938,20 @@ pattern EditsExpansionfilesPatchExpansionFileType_Patch' = EditsExpansionfilesPa
   EditsExpansionfilesPatchExpansionFileType_ExpansionFileTypeUnspecified,
   EditsExpansionfilesPatchExpansionFileType_Main,
   EditsExpansionfilesPatchExpansionFileType_Patch',
-  EditsExpansionfilesPatchExpansionFileType
-  #-}
+  EditsExpansionfilesPatchExpansionFileType #-}
 
 -- | The file type of the file configuration which is being read or modified.
-newtype EditsExpansionfilesUpdateExpansionFileType = EditsExpansionfilesUpdateExpansionFileType {fromEditsExpansionfilesUpdateExpansionFileType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsExpansionfilesUpdateExpansionFileType = EditsExpansionfilesUpdateExpansionFileType { fromEditsExpansionfilesUpdateExpansionFileType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified expansion file type.
 pattern EditsExpansionfilesUpdateExpansionFileType_ExpansionFileTypeUnspecified :: EditsExpansionfilesUpdateExpansionFileType
@@ -2651,21 +3969,20 @@ pattern EditsExpansionfilesUpdateExpansionFileType_Patch' = EditsExpansionfilesU
   EditsExpansionfilesUpdateExpansionFileType_ExpansionFileTypeUnspecified,
   EditsExpansionfilesUpdateExpansionFileType_Main,
   EditsExpansionfilesUpdateExpansionFileType_Patch',
-  EditsExpansionfilesUpdateExpansionFileType
-  #-}
+  EditsExpansionfilesUpdateExpansionFileType #-}
 
 -- | The file type of the expansion file configuration which is being updated.
-newtype EditsExpansionfilesUploadExpansionFileType = EditsExpansionfilesUploadExpansionFileType {fromEditsExpansionfilesUploadExpansionFileType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsExpansionfilesUploadExpansionFileType = EditsExpansionfilesUploadExpansionFileType { fromEditsExpansionfilesUploadExpansionFileType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified expansion file type.
 pattern EditsExpansionfilesUploadExpansionFileType_ExpansionFileTypeUnspecified :: EditsExpansionfilesUploadExpansionFileType
@@ -2683,21 +4000,20 @@ pattern EditsExpansionfilesUploadExpansionFileType_Patch' = EditsExpansionfilesU
   EditsExpansionfilesUploadExpansionFileType_ExpansionFileTypeUnspecified,
   EditsExpansionfilesUploadExpansionFileType_Main,
   EditsExpansionfilesUploadExpansionFileType_Patch',
-  EditsExpansionfilesUploadExpansionFileType
-  #-}
+  EditsExpansionfilesUploadExpansionFileType #-}
 
 -- | Type of the Image.
-newtype EditsImagesDeleteImageType = EditsImagesDeleteImageType {fromEditsImagesDeleteImageType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsImagesDeleteImageType = EditsImagesDeleteImageType { fromEditsImagesDeleteImageType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified type. Do not use.
 pattern EditsImagesDeleteImageType_AppImageTypeUnspecified :: EditsImagesDeleteImageType
@@ -2745,21 +4061,20 @@ pattern EditsImagesDeleteImageType_TvBanner = EditsImagesDeleteImageType "tvBann
   EditsImagesDeleteImageType_Icon,
   EditsImagesDeleteImageType_FeatureGraphic,
   EditsImagesDeleteImageType_TvBanner,
-  EditsImagesDeleteImageType
-  #-}
+  EditsImagesDeleteImageType #-}
 
 -- | Type of the Image. Providing an image type that refers to no images is a no-op.
-newtype EditsImagesDeleteallImageType = EditsImagesDeleteallImageType {fromEditsImagesDeleteallImageType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsImagesDeleteallImageType = EditsImagesDeleteallImageType { fromEditsImagesDeleteallImageType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified type. Do not use.
 pattern EditsImagesDeleteallImageType_AppImageTypeUnspecified :: EditsImagesDeleteallImageType
@@ -2807,21 +4122,20 @@ pattern EditsImagesDeleteallImageType_TvBanner = EditsImagesDeleteallImageType "
   EditsImagesDeleteallImageType_Icon,
   EditsImagesDeleteallImageType_FeatureGraphic,
   EditsImagesDeleteallImageType_TvBanner,
-  EditsImagesDeleteallImageType
-  #-}
+  EditsImagesDeleteallImageType #-}
 
 -- | Type of the Image. Providing an image type that refers to no images will return an empty response.
-newtype EditsImagesListImageType = EditsImagesListImageType {fromEditsImagesListImageType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsImagesListImageType = EditsImagesListImageType { fromEditsImagesListImageType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified type. Do not use.
 pattern EditsImagesListImageType_AppImageTypeUnspecified :: EditsImagesListImageType
@@ -2869,21 +4183,20 @@ pattern EditsImagesListImageType_TvBanner = EditsImagesListImageType "tvBanner"
   EditsImagesListImageType_Icon,
   EditsImagesListImageType_FeatureGraphic,
   EditsImagesListImageType_TvBanner,
-  EditsImagesListImageType
-  #-}
+  EditsImagesListImageType #-}
 
 -- | Type of the Image.
-newtype EditsImagesUploadImageType = EditsImagesUploadImageType {fromEditsImagesUploadImageType :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype EditsImagesUploadImageType = EditsImagesUploadImageType { fromEditsImagesUploadImageType :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Unspecified type. Do not use.
 pattern EditsImagesUploadImageType_AppImageTypeUnspecified :: EditsImagesUploadImageType
@@ -2931,21 +4244,20 @@ pattern EditsImagesUploadImageType_TvBanner = EditsImagesUploadImageType "tvBann
   EditsImagesUploadImageType_Icon,
   EditsImagesUploadImageType_FeatureGraphic,
   EditsImagesUploadImageType_TvBanner,
-  EditsImagesUploadImageType
-  #-}
+  EditsImagesUploadImageType #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype InappproductsDeleteLatencyTolerance = InappproductsDeleteLatencyTolerance {fromInappproductsDeleteLatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InappproductsDeleteLatencyTolerance = InappproductsDeleteLatencyTolerance { fromInappproductsDeleteLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: InappproductsDeleteLatencyTolerance
@@ -2963,21 +4275,20 @@ pattern InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCY
   InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   InappproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  InappproductsDeleteLatencyTolerance
-  #-}
+  InappproductsDeleteLatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype InappproductsPatchLatencyTolerance = InappproductsPatchLatencyTolerance {fromInappproductsPatchLatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InappproductsPatchLatencyTolerance = InappproductsPatchLatencyTolerance { fromInappproductsPatchLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: InappproductsPatchLatencyTolerance
@@ -2995,21 +4306,20 @@ pattern InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYT
   InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   InappproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  InappproductsPatchLatencyTolerance
-  #-}
+  InappproductsPatchLatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype InappproductsUpdateLatencyTolerance = InappproductsUpdateLatencyTolerance {fromInappproductsUpdateLatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype InappproductsUpdateLatencyTolerance = InappproductsUpdateLatencyTolerance { fromInappproductsUpdateLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: InappproductsUpdateLatencyTolerance
@@ -3027,21 +4337,82 @@ pattern InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCY
   InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   InappproductsUpdateLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  InappproductsUpdateLatencyTolerance
-  #-}
+  InappproductsUpdateLatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance = MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance {fromMonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype MonetizationOnetimeproductsDeleteLatencyTolerance = MonetizationOnetimeproductsDeleteLatencyTolerance { fromMonetizationOnetimeproductsDeleteLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: MonetizationOnetimeproductsDeleteLatencyTolerance
+pattern MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = MonetizationOnetimeproductsDeleteLatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: MonetizationOnetimeproductsDeleteLatencyTolerance
+pattern MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = MonetizationOnetimeproductsDeleteLatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: MonetizationOnetimeproductsDeleteLatencyTolerance
+pattern MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = MonetizationOnetimeproductsDeleteLatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  MonetizationOnetimeproductsDeleteLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  MonetizationOnetimeproductsDeleteLatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product upsert. Defaults to latency-sensitive.
+newtype MonetizationOnetimeproductsPatchLatencyTolerance = MonetizationOnetimeproductsPatchLatencyTolerance { fromMonetizationOnetimeproductsPatchLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
+
+-- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
+pattern MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: MonetizationOnetimeproductsPatchLatencyTolerance
+pattern MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED = MonetizationOnetimeproductsPatchLatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED"
+
+-- | The update will propagate to clients within several minutes on average and up to a few hours in rare cases. Throughput is limited to 7,200 updates per app per hour.
+pattern MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE :: MonetizationOnetimeproductsPatchLatencyTolerance
+pattern MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE = MonetizationOnetimeproductsPatchLatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE"
+
+-- | The update will propagate to clients within 24 hours. Supports high throughput of up to 720,000 updates per app per hour using batch modification methods.
+pattern MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT :: MonetizationOnetimeproductsPatchLatencyTolerance
+pattern MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT = MonetizationOnetimeproductsPatchLatencyTolerance "PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT"
+
+{-# COMPLETE
+  MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
+  MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
+  MonetizationOnetimeproductsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
+  MonetizationOnetimeproductsPatchLatencyTolerance #-}
+
+-- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
+newtype MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance = MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance { fromMonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance
@@ -3059,21 +4430,20 @@ pattern MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPD
   MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance
-  #-}
+  MonetizationSubscriptionsBasePlansOffersPatchLatencyTolerance #-}
 
 -- | Optional. The latency tolerance for the propagation of this product update. Defaults to latency-sensitive.
-newtype MonetizationSubscriptionsPatchLatencyTolerance = MonetizationSubscriptionsPatchLatencyTolerance {fromMonetizationSubscriptionsPatchLatencyTolerance :: Core.Text}
-  deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
-  deriving newtype
-    ( Core.Hashable,
-      Core.ToHttpApiData,
-      Core.FromHttpApiData,
-      Core.ToJSON,
-      Core.ToJSONKey,
-      Core.FromJSON,
-      Core.FromJSONKey
-    )
+newtype MonetizationSubscriptionsPatchLatencyTolerance = MonetizationSubscriptionsPatchLatencyTolerance { fromMonetizationSubscriptionsPatchLatencyTolerance :: Core.Text }
+    deriving stock (Core.Show, Core.Read, Core.Eq, Core.Ord, Core.Generic)
+    deriving newtype
+      ( Core.Hashable
+      , Core.ToHttpApiData
+      , Core.FromHttpApiData
+      , Core.ToJSON
+      , Core.ToJSONKey
+      , Core.FromJSON
+      , Core.FromJSONKey
+      )
 
 -- | Defaults to PRODUCT/UPDATE/LATENCY/TOLERANCE/LATENCY_SENSITIVE.
 pattern MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED :: MonetizationSubscriptionsPatchLatencyTolerance
@@ -3091,5 +4461,4 @@ pattern MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLER
   MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCEUNSPECIFIED,
   MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYSENSITIVE,
   MonetizationSubscriptionsPatchLatencyTolerance_PRODUCTUPDATELATENCYTOLERANCELATENCYTOLERANT,
-  MonetizationSubscriptionsPatchLatencyTolerance
-  #-}
+  MonetizationSubscriptionsPatchLatencyTolerance #-}
