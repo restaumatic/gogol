@@ -80,7 +80,7 @@ authorizedUserToken ::
   m (OAuthToken s)
 authorizedUserToken u r =
   refreshRequest $
-    tokenRequest
+    (parseTokenEndpoint (_userTokenEndpoint u))
       { Client.requestBody =
           textBody $
             "grant_type=refresh_token"
@@ -104,7 +104,7 @@ serviceAccountToken ::
 serviceAccountToken s p l m = do
   b <- encodeBearerJWT s p
   let rq =
-        tokenRequest
+        (parseTokenEndpoint (_serviceTokenEndpoint s))
           { Client.requestBody =
               RequestBodyBS $
                 "grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer"

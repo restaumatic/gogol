@@ -1,0 +1,104 @@
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DerivingStrategies #-}
+{-# LANGUAGE DuplicateRecordFields #-}
+{-# LANGUAGE ImportQualifiedPost #-}
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE PatternSynonyms #-}
+{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE StrictData #-}
+{-# LANGUAGE TypeFamilies #-}
+
+{-# OPTIONS_GHC -fno-warn-duplicate-exports #-}
+{-# OPTIONS_GHC -fno-warn-name-shadowing #-}
+{-# OPTIONS_GHC -fno-warn-unused-binds #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+{-# OPTIONS_GHC -fno-warn-unused-matches #-}
+
+-- |
+-- Module      : Gogol.DFAReporting.DynamicFeeds.Insert
+-- Copyright   : (c) 2015-2025 Brendan Hay
+-- License     : Mozilla Public License, v. 2.0.
+-- Maintainer  : Brendan Hay <brendan.g.hay+gogol@gmail.com>
+--               Toni Cebrián <toni@tonicebrian.com>
+-- Stability   : auto-generated
+-- Portability : non-portable (GHC extensions)
+--
+-- Inserts a new dynamic feed.
+--
+-- /See:/ <https://developers.google.com/doubleclick-advertisers/ Campaign Manager 360 API Reference> for @dfareporting.dynamicFeeds.insert@.
+module Gogol.DFAReporting.DynamicFeeds.Insert
+    (
+    -- * Resource
+      DFAReportingDynamicFeedsInsertResource
+
+    -- ** Constructing a Request
+    , DFAReportingDynamicFeedsInsert (..)
+    , newDFAReportingDynamicFeedsInsert
+    ) where
+
+import qualified Gogol.Prelude as Core
+import Gogol.DFAReporting.Types
+
+-- | A resource alias for @dfareporting.dynamicFeeds.insert@ method which the
+-- 'DFAReportingDynamicFeedsInsert' request conforms to.
+type DFAReportingDynamicFeedsInsertResource =
+     "dfareporting" Core.:>
+       "v5" Core.:>
+         "studio" Core.:>
+           "dynamicFeeds" Core.:>
+             Core.QueryParam "$.xgafv" Xgafv Core.:>
+               Core.QueryParam "access_token" Core.Text Core.:>
+                 Core.QueryParam "callback" Core.Text Core.:>
+                   Core.QueryParam "uploadType" Core.Text Core.:>
+                     Core.QueryParam "upload_protocol" Core.Text Core.:>
+                       Core.QueryParam "alt" Core.AltJSON Core.:>
+                         Core.ReqBody '[Core.JSON] DynamicFeedsInsertRequest Core.:>
+                           Core.Post '[Core.JSON] DynamicFeed
+
+-- | Inserts a new dynamic feed.
+--
+-- /See:/ 'newDFAReportingDynamicFeedsInsert' smart constructor.
+data DFAReportingDynamicFeedsInsert = DFAReportingDynamicFeedsInsert
+    {
+      -- | V1 error format.
+      xgafv :: (Core.Maybe Xgafv)
+      -- | OAuth access token.
+    , accessToken :: (Core.Maybe Core.Text)
+      -- | JSONP
+    , callback :: (Core.Maybe Core.Text)
+      -- | Multipart request metadata.
+    , payload :: DynamicFeedsInsertRequest
+      -- | Legacy upload protocol for media (e.g. \"media\", \"multipart\").
+    , uploadType :: (Core.Maybe Core.Text)
+      -- | Upload protocol for media (e.g. \"raw\", \"multipart\").
+    , uploadProtocol :: (Core.Maybe Core.Text)
+    }
+    deriving (Core.Eq, Core.Show, Core.Generic)
+
+-- | Creates a value of 'DFAReportingDynamicFeedsInsert' with the minimum fields required to make a request.
+newDFAReportingDynamicFeedsInsert 
+    :: 
+                                  DynamicFeedsInsertRequest
+       -- ^  Multipart request metadata. See 'payload'.
+    -> DFAReportingDynamicFeedsInsert
+newDFAReportingDynamicFeedsInsert payload
+  = DFAReportingDynamicFeedsInsert{xgafv = Core.Nothing,
+                                   accessToken = Core.Nothing, callback = Core.Nothing,
+                                   payload = payload, uploadType = Core.Nothing,
+                                   uploadProtocol = Core.Nothing}
+instance Core.GoogleRequest DFAReportingDynamicFeedsInsert where
+        type Rs DFAReportingDynamicFeedsInsert = DynamicFeed
+        type Scopes DFAReportingDynamicFeedsInsert =
+             '[Dfatrafficking'FullControl]
+        requestClient DFAReportingDynamicFeedsInsert{..}
+          = go xgafv accessToken callback uploadType uploadProtocol
+              (Core.Just Core.AltJSON)
+              payload
+              dFAReportingService
+          where go
+                  = Core.buildClient
+                      (Core.Proxy :: Core.Proxy DFAReportingDynamicFeedsInsertResource)
+                      Core.mempty
+

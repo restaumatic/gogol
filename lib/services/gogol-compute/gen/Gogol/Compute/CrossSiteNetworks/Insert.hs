@@ -1,0 +1,123 @@
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DerivingStrategies #-}
+{-# LANGUAGE DuplicateRecordFields #-}
+{-# LANGUAGE ImportQualifiedPost #-}
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE PatternSynonyms #-}
+{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE StrictData #-}
+{-# LANGUAGE TypeFamilies #-}
+
+{-# OPTIONS_GHC -fno-warn-duplicate-exports #-}
+{-# OPTIONS_GHC -fno-warn-name-shadowing #-}
+{-# OPTIONS_GHC -fno-warn-unused-binds #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+{-# OPTIONS_GHC -fno-warn-unused-matches #-}
+
+-- |
+-- Module      : Gogol.Compute.CrossSiteNetworks.Insert
+-- Copyright   : (c) 2015-2025 Brendan Hay
+-- License     : Mozilla Public License, v. 2.0.
+-- Maintainer  : Brendan Hay <brendan.g.hay+gogol@gmail.com>
+--               Toni Cebrián <toni@tonicebrian.com>
+-- Stability   : auto-generated
+-- Portability : non-portable (GHC extensions)
+--
+-- Creates a cross-site network in the specified project in the given scope using the parameters that are included in the request.
+--
+-- /See:/ <https://cloud.google.com/compute/ Compute Engine API Reference> for @compute.crossSiteNetworks.insert@.
+module Gogol.Compute.CrossSiteNetworks.Insert
+    (
+    -- * Resource
+      ComputeCrossSiteNetworksInsertResource
+
+    -- ** Constructing a Request
+    , ComputeCrossSiteNetworksInsert (..)
+    , newComputeCrossSiteNetworksInsert
+    ) where
+
+import qualified Gogol.Prelude as Core
+import Gogol.Compute.Types
+
+-- | A resource alias for @compute.crossSiteNetworks.insert@ method which the
+-- 'ComputeCrossSiteNetworksInsert' request conforms to.
+type ComputeCrossSiteNetworksInsertResource =
+     "compute" Core.:>
+       "v1" Core.:>
+         "projects" Core.:>
+           Core.Capture "project" Core.Text Core.:>
+             "global" Core.:>
+               "crossSiteNetworks" Core.:>
+                 Core.QueryParam "$.xgafv" Xgafv Core.:>
+                   Core.QueryParam "access_token" Core.Text Core.:>
+                     Core.QueryParam "callback" Core.Text Core.:>
+                       Core.QueryParam "requestId" Core.Text Core.:>
+                         Core.QueryParam "uploadType" Core.Text Core.:>
+                           Core.QueryParam "upload_protocol" Core.Text Core.:>
+                             Core.QueryParam "validateOnly" Core.Bool Core.:>
+                               Core.QueryParam "alt" Core.AltJSON Core.:>
+                                 Core.ReqBody '[Core.JSON] CrossSiteNetwork Core.:>
+                                   Core.Post '[Core.JSON] Operation
+
+-- | Creates a cross-site network in the specified project in the given scope using the parameters that are included in the request.
+--
+-- /See:/ 'newComputeCrossSiteNetworksInsert' smart constructor.
+data ComputeCrossSiteNetworksInsert = ComputeCrossSiteNetworksInsert
+    {
+      -- | V1 error format.
+      xgafv :: (Core.Maybe Xgafv)
+      -- | OAuth access token.
+    , accessToken :: (Core.Maybe Core.Text)
+      -- | JSONP
+    , callback :: (Core.Maybe Core.Text)
+      -- | Multipart request metadata.
+    , payload :: CrossSiteNetwork
+      -- | Project ID for this request.
+    , project :: Core.Text
+      -- | An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.
+      -- 
+      -- For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
+      -- 
+      -- The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000). end_interface: MixerMutationRequestBuilder
+    , requestId :: (Core.Maybe Core.Text)
+      -- | Legacy upload protocol for media (e.g. \"media\", \"multipart\").
+    , uploadType :: (Core.Maybe Core.Text)
+      -- | Upload protocol for media (e.g. \"raw\", \"multipart\").
+    , uploadProtocol :: (Core.Maybe Core.Text)
+      -- | [Input Only] Validate the new configuration, but don\'t create it.
+    , validateOnly :: (Core.Maybe Core.Bool)
+    }
+    deriving (Core.Eq, Core.Show, Core.Generic)
+
+-- | Creates a value of 'ComputeCrossSiteNetworksInsert' with the minimum fields required to make a request.
+newComputeCrossSiteNetworksInsert 
+    :: 
+                                  CrossSiteNetwork
+       -- ^  Multipart request metadata. See 'payload'.
+    -> Core.Text
+       -- ^  Project ID for this request. See 'project'.
+    -> ComputeCrossSiteNetworksInsert
+newComputeCrossSiteNetworksInsert payload project
+  = ComputeCrossSiteNetworksInsert{xgafv = Core.Nothing,
+                                   accessToken = Core.Nothing, callback = Core.Nothing,
+                                   payload = payload, project = project, requestId = Core.Nothing,
+                                   uploadType = Core.Nothing, uploadProtocol = Core.Nothing,
+                                   validateOnly = Core.Nothing}
+instance Core.GoogleRequest ComputeCrossSiteNetworksInsert where
+        type Rs ComputeCrossSiteNetworksInsert = Operation
+        type Scopes ComputeCrossSiteNetworksInsert =
+             '[CloudPlatform'FullControl, Compute'FullControl]
+        requestClient ComputeCrossSiteNetworksInsert{..}
+          = go project xgafv accessToken callback requestId uploadType
+              uploadProtocol
+              validateOnly
+              (Core.Just Core.AltJSON)
+              payload
+              computeService
+          where go
+                  = Core.buildClient
+                      (Core.Proxy :: Core.Proxy ComputeCrossSiteNetworksInsertResource)
+                      Core.mempty
+

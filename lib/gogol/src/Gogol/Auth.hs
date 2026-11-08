@@ -102,6 +102,7 @@ authToAuthorizedUser a =
     <$> (_clientId <$> getClient)
     <*> maybe (Left "no refresh token") Right (_tokenRefresh (_token a))
     <*> (_clientSecret <$> getClient)
+    <*> pure Nothing
   where
     getClient = case _credentials a of
       FromClient c _ -> Right c

@@ -1,0 +1,114 @@
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DerivingStrategies #-}
+{-# LANGUAGE DuplicateRecordFields #-}
+{-# LANGUAGE ImportQualifiedPost #-}
+{-# LANGUAGE LambdaCase #-}
+{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE PatternSynonyms #-}
+{-# LANGUAGE RecordWildCards #-}
+{-# LANGUAGE StrictData #-}
+{-# LANGUAGE TypeFamilies #-}
+
+{-# OPTIONS_GHC -fno-warn-duplicate-exports #-}
+{-# OPTIONS_GHC -fno-warn-name-shadowing #-}
+{-# OPTIONS_GHC -fno-warn-unused-binds #-}
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+{-# OPTIONS_GHC -fno-warn-unused-matches #-}
+
+-- |
+-- Module      : Gogol.CloudIdentity.InboundOidcSsoProfiles.Patch
+-- Copyright   : (c) 2015-2025 Brendan Hay
+-- License     : Mozilla Public License, v. 2.0.
+-- Maintainer  : Brendan Hay <brendan.g.hay+gogol@gmail.com>
+--               Toni Cebrián <toni@tonicebrian.com>
+-- Stability   : auto-generated
+-- Portability : non-portable (GHC extensions)
+--
+-- Updates an InboundOidcSsoProfile. When the target customer has enabled <https://support.google.com/a/answer/13790448 Multi-party approval for sensitive actions>, the @Operation@ in the response will have @\"done\": false@, it will not have a response, and the metadata will have @\"state\": \"awaiting-multi-party-approval\"@.
+--
+-- /See:/ <https://cloud.google.com/identity/ Cloud Identity API Reference> for @cloudidentity.inboundOidcSsoProfiles.patch@.
+module Gogol.CloudIdentity.InboundOidcSsoProfiles.Patch
+    (
+    -- * Resource
+      CloudIdentityInboundOidcSsoProfilesPatchResource
+
+    -- ** Constructing a Request
+    , CloudIdentityInboundOidcSsoProfilesPatch (..)
+    , newCloudIdentityInboundOidcSsoProfilesPatch
+    ) where
+
+import qualified Gogol.Prelude as Core
+import Gogol.CloudIdentity.Types
+
+-- | A resource alias for @cloudidentity.inboundOidcSsoProfiles.patch@ method which the
+-- 'CloudIdentityInboundOidcSsoProfilesPatch' request conforms to.
+type CloudIdentityInboundOidcSsoProfilesPatchResource =
+     "v1" Core.:>
+       Core.Capture "name" Core.Text Core.:>
+         Core.QueryParam "$.xgafv" Xgafv Core.:>
+           Core.QueryParam "access_token" Core.Text Core.:>
+             Core.QueryParam "callback" Core.Text Core.:>
+               Core.QueryParam "updateMask" Core.FieldMask Core.:>
+                 Core.QueryParam "uploadType" Core.Text Core.:>
+                   Core.QueryParam "upload_protocol" Core.Text Core.:>
+                     Core.QueryParam "alt" Core.AltJSON Core.:>
+                       Core.ReqBody '[Core.JSON] InboundOidcSsoProfile Core.:>
+                         Core.Patch '[Core.JSON] Operation
+
+-- | Updates an InboundOidcSsoProfile. When the target customer has enabled <https://support.google.com/a/answer/13790448 Multi-party approval for sensitive actions>, the @Operation@ in the response will have @\"done\": false@, it will not have a response, and the metadata will have @\"state\": \"awaiting-multi-party-approval\"@.
+--
+-- /See:/ 'newCloudIdentityInboundOidcSsoProfilesPatch' smart constructor.
+data CloudIdentityInboundOidcSsoProfilesPatch = CloudIdentityInboundOidcSsoProfilesPatch
+    {
+      -- | V1 error format.
+      xgafv :: (Core.Maybe Xgafv)
+      -- | OAuth access token.
+    , accessToken :: (Core.Maybe Core.Text)
+      -- | JSONP
+    , callback :: (Core.Maybe Core.Text)
+      -- | Output only. <https://cloud.google.com/apis/design/resource_names Resource name> of the OIDC SSO profile.
+    , name :: Core.Text
+      -- | Multipart request metadata.
+    , payload :: InboundOidcSsoProfile
+      -- | Required. The list of fields to be updated.
+    , updateMask :: (Core.Maybe Core.FieldMask)
+      -- | Legacy upload protocol for media (e.g. \"media\", \"multipart\").
+    , uploadType :: (Core.Maybe Core.Text)
+      -- | Upload protocol for media (e.g. \"raw\", \"multipart\").
+    , uploadProtocol :: (Core.Maybe Core.Text)
+    }
+    deriving (Core.Eq, Core.Show, Core.Generic)
+
+-- | Creates a value of 'CloudIdentityInboundOidcSsoProfilesPatch' with the minimum fields required to make a request.
+newCloudIdentityInboundOidcSsoProfilesPatch 
+    :: 
+                                            Core.Text
+       -- ^  Output only. <https://cloud.google.com/apis/design/resource_names Resource name> of the OIDC SSO profile. See 'name'.
+    -> InboundOidcSsoProfile
+       -- ^  Multipart request metadata. See 'payload'.
+    -> CloudIdentityInboundOidcSsoProfilesPatch
+newCloudIdentityInboundOidcSsoProfilesPatch name payload
+  = CloudIdentityInboundOidcSsoProfilesPatch{xgafv = Core.Nothing,
+                                             accessToken = Core.Nothing, callback = Core.Nothing,
+                                             name = name, payload = payload,
+                                             updateMask = Core.Nothing, uploadType = Core.Nothing,
+                                             uploadProtocol = Core.Nothing}
+instance Core.GoogleRequest
+           CloudIdentityInboundOidcSsoProfilesPatch
+         where
+        type Rs CloudIdentityInboundOidcSsoProfilesPatch = Operation
+        type Scopes CloudIdentityInboundOidcSsoProfilesPatch =
+             '[CloudIdentity'Inboundsso, CloudPlatform'FullControl]
+        requestClient CloudIdentityInboundOidcSsoProfilesPatch{..}
+          = go name xgafv accessToken callback updateMask uploadType
+              uploadProtocol
+              (Core.Just Core.AltJSON)
+              payload
+              cloudIdentityService
+          where go
+                  = Core.buildClient
+                      (Core.Proxy ::
+                         Core.Proxy CloudIdentityInboundOidcSsoProfilesPatchResource)
+                      Core.mempty
+
